@@ -1,0 +1,293 @@
+// Reset Styles
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Fonts
+@font-face {
+    font-family: "CircularStdFont";
+    src: url(./fonts/circular-std-medium-500.ttf) format("opentype");
+    font-display: swap;
+}
+*{
+    font-family: "CircularStdFont"!important;
+    font-weight: 500!important;
+}
+
+// Text colors
+.color-222222{
+    color: #222222;
+}
+.color-5B5F62{
+    color: #5B5F62;
+}
+.color-191825{
+    color: #191825;
+}
+.color-F67E18{
+    color: #F67E18;
+}
+.color-FFFFFF{
+    color: #FFFFFF;
+}
+.color-19182580{
+    // rgba(25, 24, 37, 0.5);
+    color: #19182580;
+}
+
+
+// Font Size
+.font-14{
+    font-size: 14px;
+}
+.font-15{
+    font-size: 15px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-22{
+    font-size: 23px;
+}
+.font-23{
+    font-size: 23px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-44{
+    font-size: 44px;
+}
+.font-58{
+    font-size: 58px;
+}
+
+
+// Line Height
+.lh-14{
+    line-height: 14px;
+}
+.lh-18{
+    line-height: 18px;
+}
+.lh-20{
+    line-height: 20px;
+}
+.lh-21{
+    line-height: 21px;
+}
+.lh-22{
+    line-height: 22px;
+}
+.lh-24{
+    line-height: 24px;
+}
+.lh-28{
+    line-height: 28px;
+}
+.lh-29{
+    line-height: 22px;
+}
+.lh-36{
+    line-height: 36px;
+}
+.lh-48{
+    line-height: 48px;
+}
+.lh-53{
+    line-height: 53px;
+}
+
+
+// Tags
+.tag{
+    border-radius: 4px;
+    padding: 1px 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+    &.tag-violet{
+        background: #800080;
+    }
+}
+// Reset Container
+.container{
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+
+// Home Page
+
+// popular-travelogues-categories
+.popular-travelogues-categories{
+    padding: 55px 0 0;
+    .travel_card_grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px 75px;
+        .travel_cardblock{
+            .travel_cardblock_img_part{
+                img{
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+
+                }
+            }
+        }
+        
+    }
+}
+
+// Footer
+footer{
+    padding: 0 0 100px;
+    .footer_logo{
+        max-width: 216px;
+        object-fit: contain;
+    }
+    .footer_first{
+        max-width: 1110px;
+        margin: 0 auto 60px;
+        .things_menu{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            a{
+                color: rgba(25, 24, 37, 0.5);
+                font-size: 16px;
+                line-height: 160%;
+                word-break: break-all;
+            }
+        }
+    }
+    .footer_middle{
+        margin: 0 0 80px;
+        .footer_blog_cards_wrap{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 20px 30px;
+        }
+        .footer_blog_card{
+            .footer_blog_img_part{
+                position: relative;
+                img{
+                    border-radius: 3px;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(217, 217, 217, 0.1);
+                }
+                .tag{
+                    left: 10px;
+                    bottom: 10px;
+                }
+            }
+            .post_name{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                & + div{
+                    color: rgba(25, 24, 37, 0.45);
+                }
+            }
+        }
+    }
+    .footer_last{
+        .footer_part_one{
+            margin: 0 0 30px;
+            .footer_menu{
+                a{
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #1A1A1A;
+                }
+            }
+        }
+        .footer_part_two{
+            .policy_menu{
+                li{
+                    margin-right: 20px;
+                    a{
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .copyright{
+                color: #000000;
+                text-align: right;
+                
+            }
+        }
+    }
+    
+    a{
+        transition: 0.5s ease;
+        &:hover{
+            text-decoration: none;
+            color:rgba(246, 126, 24, 1)!important;
+        }
+    }
+}
