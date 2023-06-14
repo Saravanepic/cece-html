@@ -14,6 +14,110 @@
     <title>CECE Home Page</title>
   </head>
 
+  <!-- Header -->
+  <header id="myHeader">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="site-logo">
+          <a href="">
+            <img src="./images/header-logo.png" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <nav class="header_menu">
+          <ul class="d-flex align-items-center justify-content-between">
+            <li><a href="">Travelogues</a></li>
+            <li><a href="">Online Experiences</a></li>
+            <li><a href="">Activities</a></li>
+            <li><a href="">Elite Trips</a></li>
+            <li><a href="" class="login">Login</a></li>
+            <li><a href="" class="signup">Signup</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Banner -->
+  <section class="home_banner">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide h-100"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img
+            class="d-block w-100"
+            src="./images/banner.png"
+            alt="First slide"
+            class="img-fluid"
+          />
+          <div class="content_part">
+            <h2 class="color-222222 font-58 lh-73 text-capitalize">
+              Travel <br />memories you'll never <br />forget
+            </h2>
+            <p class="color-5B5F62 font-16 lh-24 my-3">
+              Plan and book your perfect trip with expert advice, travel tips,
+              <br />destination information and inspiration from us.
+            </p>
+            <form action="" class="search_in_banner">
+              <input
+                type="text"
+                placeholder="Discover the world, One search at a time..."
+              />
+              <button></button>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="carousel-item h-100">
+          <img
+            class="d-block w-100"
+            src="./images/banner.png"
+            alt="Second slide"
+            class="img-fluid"
+          />
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            class="d-block w-100"
+            src="./images/banner.png"
+            alt="Third slide"
+            class="img-fluid"
+          />
+        </div> -->
+      </div>
+      <div class="carousel-arrows">
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Our Services -->
   <section class="our_services">
     <div class="container">
@@ -603,7 +707,24 @@
       </div>
     </div>
   </footer>
+
   <body>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
