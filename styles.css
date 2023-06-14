@@ -320,6 +320,34 @@ a {
   padding: 12px;
 }
 
+@-webkit-keyframes run {
+  0% {
+    left: 160px;
+  }
+  50% {
+    left: 170px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+@-webkit-keyframes moveslide {
+  0% {
+    padding-right: 0;
+  }
+  50% {
+    padding-right: 5px;
+  }
+  100% {
+    padding-right: 0;
+  }
+}
+h6 img {
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: moveslide;
+  -webkit-animation-duration: 3s;
+}
+
 header {
   transition: 0.5s ease;
   position: fixed;
@@ -426,17 +454,6 @@ header .header_menu li a.signup:hover {
   -webkit-animation: linear infinite;
   -webkit-animation-name: run;
   -webkit-animation-duration: 3s;
-}
-@-webkit-keyframes run {
-  0% {
-    left: 160px;
-  }
-  50% {
-    left: 170px;
-  }
-  100% {
-    left: 160px;
-  }
 }
 .home_banner .carousel-indicators {
   bottom: 30px;

@@ -303,6 +303,37 @@ a{
     }
 }
 
+
+// Animations
+@-webkit-keyframes run {
+    0% {
+      left: 160px;
+    }
+    50% {
+      left: 170px;
+    }
+    100% {
+      left: 160px;    
+    }
+ }
+ @-webkit-keyframes moveslide {
+    0% {
+      padding-right: 0;
+    }
+    50% {
+        padding-right: 5px;
+    }
+    100% {
+        padding-right: 0;
+    }
+ }
+h6 img{
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: moveslide;
+    -webkit-animation-duration: 3s; 
+}
+
+
 // Home Page
 
 //header
@@ -420,21 +451,9 @@ header{
                 -webkit-animation-name: run;
                 -webkit-animation-duration: 3s;
             }
-            @-webkit-keyframes run {
-                0% {
-                  left: 160px;
-                }
-                50% {
-                  left: 170px;
-                }
-                100% {
-                  left: 160px;    
-                }
-              }
         }
     }
-
-
+   
     .carousel-indicators {
         bottom: 30px;
         display: flex;
