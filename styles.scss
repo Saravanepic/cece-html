@@ -111,6 +111,10 @@ p{
     // rgba(25, 24, 37, 0.5);
     color: #19182580;
 }
+.color-22222259{
+    // rgba(34, 34, 34, 0.35)
+    color: #22222259;
+}
 
 
 // Font Size
@@ -214,6 +218,12 @@ p{
     &.tag-green{
         background: linear-gradient(97.04deg, #1DD71D 0.69%, #0ED90E 112.31%);
     }
+    &.tag-brown{
+        background: linear-gradient(97.04deg, #CDA65C 0.69%, #C5963D 112.31%);
+    }
+    &.tag-orange{
+        background: linear-gradient(97.04deg, #F67E18 0.69%, #F9A156 112.31%);
+    }
 }
 
 
@@ -293,14 +303,130 @@ a{
 // Home Page
 
 
+//our_services
+.our_services{
+    padding: 50px 0;
+    .container{
+        position: relative;
+        &::after{
+            content: "";
+            background-image: url(./images/explore-orange-dots.svg);
+            width: 134px;
+            height: 128px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 24px;
+            right: 0;
+        }
+    }
+}
+
+// best_selling_activities
+.best_selling_activities{
+    padding: 60px 0 10px;
+}
+
+// most-liked-destinations
+.most-liked-destinations{
+    padding: 60px 0 10px;
+}
+
+// top-seasonal-trips
+.top-seasonal-trips{
+    padding: 50px 0;
+}
+
 // elite-trips
 .elite-trips{
     padding: 70px 0 30px;
 }
+.elite-card {
+    .image_part{
+        img{
+            border-radius: 0!important;
+            height: 226px!important;
+        }
+    }
+}
+.elite-trip-card{
+    .image_part{
+        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        img{
+            border-radius: 0!important;
+            height: 600px!important;
+            box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        }
+        .tag{
+            top:24px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        span{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+}
+
+
 // top-elite-trips
-.top-elite-trips{
-    font-family: "CircularStdFont-Normal"!important;
+.popular-attractions{
     padding: 50px 0;
+    .popular_attractions{
+        margin: 40px 0 0;
+        display: flex;
+        justify-content: space-between;
+        max-height: 487px;
+        .popular_attractions_grid_col{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            gap: 20px;
+            // min-height: 487px;
+            // max-height: 487px;
+            &:nth-child(1){
+                width:19%;
+            }
+            &:nth-child(2){
+                width:19%;
+            }
+            &:nth-child(3){
+                width:30%;
+            }
+            &:nth-child(4){
+                width:31%;
+            }
+            .popular_attractions_card{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .image_part{
+                    height: 100%;
+                    box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+                    border-radius: 10px;
+                    img{
+                        height: 100%;
+                        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+                .content_part{
+                    bottom: 25px;
+                    left: 15px;
+                    right: 15px;
+                    position: absolute;
+                }
+            }
+        }
+    }
 }
 
 // upcoming-online-experiences
