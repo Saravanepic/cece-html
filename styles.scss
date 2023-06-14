@@ -43,16 +43,53 @@ table {
     border-spacing: 0;
 }
 
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 // Fonts
 @font-face {
-    font-family: "CircularStdFont";
-    src: url(./fonts/circular-std-medium-500.ttf) format("opentype");
+    font-family: "CircularStdFont-Medium";
+    src: url(./fonts/circular-std-font-family/CircularStd-Medium.ttf) format("truetype");
     font-display: swap;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "CircularStdFont-Bold";
+    src: url(./fonts/circular-std-font-family/CircularStd-Bold.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "CircularStdFont-Normal";
+    src: url(./fonts/circular-std-font-family/CircularStd-Book.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 400;
 }
 *{
-    font-family: "CircularStdFont"!important;
-    font-weight: 500!important;
+    font-family: "CircularStdFont-Normal"!important;
+    // font-weight: 500!important;
 }
+// Font-Familys
+.csf-normal{
+    font-family: "CircularStdFont-Normal"!important;
+}
+.csf-medium{
+    font-family: "CircularStdFont-Medium"!important;
+}
+.csf-bold{
+    font-family: "CircularStdFont-Bold"!important;
+}
+.font-basker{
+    font-family: 'Libre Baskerville', serif!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "CircularStdFont-Bold"!important;
+}
+p{
+    font-family: "CircularStdFont-Normal"!important;
+}
+
+
 
 // Text colors
 .color-222222{
@@ -195,6 +232,7 @@ table {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-family: "CircularStdFont-Bold"!important;
     &::after{
         content: "";
         background-image: url(./images/arrow-right-orange.svg);
@@ -255,6 +293,15 @@ a{
 // Home Page
 
 
+// elite-trips
+.elite-trips{
+    padding: 70px 0 30px;
+}
+// top-elite-trips
+.top-elite-trips{
+    font-family: "CircularStdFont-Normal"!important;
+    padding: 50px 0;
+}
 
 // upcoming-online-experiences
 .upcoming-online-experiences{
@@ -539,6 +586,7 @@ footer{
                     font-size: 16px;
                     line-height: 20px;
                     color: #1A1A1A;
+                    font-family: "CircularStdFont-Bold"!important;
                 }
             }
         }
