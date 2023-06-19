@@ -89,8 +89,6 @@ p{
     font-family: "CircularStdFont-Normal"!important;
 }
 
-
-
 // Text colors
 .color-222222{
     color: #222222;
@@ -179,7 +177,7 @@ p{
     line-height: 28px;
 }
 .lh-29{
-    line-height: 22px;
+    line-height: 29px;
 }
 .lh-36{
     line-height: 36px;
@@ -404,31 +402,46 @@ header{
                     text-decoration: none;
                     color: #F67E18;
                 }
-                &.login{
-                    color: #F67E18;
-                    text-transform: uppercase;
-                    border: 1px solid transparent;
-                    border-radius: 160px;
-                    padding: 7px 18px;
-                    &:hover{
+                @media all and (min-width:1024px){
+                    &.login{
+                        color: #F67E18;
+                        text-transform: uppercase;
+                        border: 1px solid transparent;
+                        border-radius: 160px;
+                        padding: 7px 18px;
+                        &:hover{
+                            color: #F67E18;
+                            border: 1px solid #F67E18;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &.signup{
                         color: #F67E18;
                         border: 1px solid #F67E18;
-                        
+                        border-radius: 160px;
+                        padding: 7px 18px;
                         text-transform: uppercase;
+                        &:hover{
+                            background: #F67E18;
+                            color: white;
+                        }
                     }
                 }
-                &.signup{
-                    color: #F67E18;
-                    border: 1px solid #F67E18;
-                    border-radius: 160px;
-                    padding: 7px 18px;
-                    text-transform: uppercase;
-                    &:hover{
-                        background: #F67E18;
-                        color: white;
-                    }
-                }
+                
             }
+        }
+    }
+    .navbar-toggler-mobile{
+        background: #F67E18;
+        box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+        border-radius: 5px;
+        padding: 12px 8px;
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        svg{
+            margin-right: 6px;
         }
     }
 }
@@ -530,18 +543,25 @@ header{
 
     .search_in_banner{
         position: relative;
+        width: 100%;
+        @media all and (min-width:1200px){
+            max-width: 627px;
+        }
         input{
             border: 1px solid #F67E18;
             box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
             border-radius: 38px;
             padding: 30px;
             height: 76px;
-            min-width: 627px;
             font-weight: 500;
             font-size: 18px;
             line-height: 17px;
             color: rgba(45, 49, 52, 0.4);
             font-family: "CircularStdFont-Medium"!important;
+            width: 100%;
+            @media all and (min-width:1200px){
+                max-width: 627px;
+            }
         }
         button{
             position: absolute;
@@ -793,44 +813,46 @@ header{
             height: 100%;
             // min-height: 487px;
             // max-height: 487px;
-            &:nth-child(1){
-                width:22%;
-                .popular_attractions_card{
-                    &:nth-child(1){
-                        height: 339px;
-                    }
-                    &:nth-child(2){
-                        height: 133px;
-                    }
-                }
-            }
-            &:nth-child(2){
-                width:22%;
-                .popular_attractions_card{
-                    &:nth-child(1){
-                        height: 267px;
-                    }
-                    &:nth-child(2){
-                        height: 200px;
+            @media all and (min-width:1024px){
+                &:nth-child(1){
+                    width:22%;
+                    .popular_attractions_card{
+                        &:nth-child(1){
+                            height: 339px;
+                        }
+                        &:nth-child(2){
+                            height: 133px;
+                        }
                     }
                 }
-            }
-            &:nth-child(3){
-                width:28%;
-                .popular_attractions_card{
-                    &:nth-child(1){
-                        height: 200px;
-                    }
-                    &:nth-child(2){
-                        height: 267px;
+                &:nth-child(2){
+                    width:22%;
+                    .popular_attractions_card{
+                        &:nth-child(1){
+                            height: 267px;
+                        }
+                        &:nth-child(2){
+                            height: 200px;
+                        }
                     }
                 }
-            }
-            &:nth-child(4){
-                width:28%;
-                .popular_attractions_card{
-                    &:nth-child(1){
-                        height: 487px;
+                &:nth-child(3){
+                    width:28%;
+                    .popular_attractions_card{
+                        &:nth-child(1){
+                            height: 200px;
+                        }
+                        &:nth-child(2){
+                            height: 267px;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    width:28%;
+                    .popular_attractions_card{
+                        &:nth-child(1){
+                            height: 487px;
+                        }
                     }
                 }
             }
@@ -917,53 +939,56 @@ header{
             }
             
         }
-        &:nth-child(1){
-            width:27%;
-            img{
-                height: 487px;
-            }
-        }
-        &:nth-child(2){
-            width:27%;
-            .experience_category_card:nth-child(1){
-                margin-bottom: 20px;
+        @media all and (min-width:992px){
+            &:nth-child(1){
+                width:27%;
                 img{
-                    height: 200px;
+                    height: 487px;
                 }
             }
-            .experience_category_card:nth-child(2){
+            &:nth-child(2){
+                width:27%;
+                .experience_category_card:nth-child(1){
+                    margin-bottom: 20px;
+                    img{
+                        height: 200px;
+                    }
+                }
+                .experience_category_card:nth-child(2){
+                    img{
+                        height: 267px;
+                    }
+                }
+            }
+            &:nth-child(3){
+                width:20%;
+                .experience_category_card:nth-child(1){
+                    margin-bottom: 20px;
+                    img{
+                        height: 267px;
+                    }
+                }
+                .experience_category_card:nth-child(2){
+                    img{
+                        height: 200px;
+                    }
+                }
+            }
+            &:nth-child(4){
+                width:20%;
                 img{
-                    height: 267px;
+                    height: 487px;
+                }
+            }
+             &:nth-child(5),
+             &:nth-child(6){
+                width:49%;
+                img{
+                    height: 226px;
                 }
             }
         }
-        &:nth-child(3){
-            width:20%;
-            .experience_category_card:nth-child(1){
-                margin-bottom: 20px;
-                img{
-                    height: 267px;
-                }
-            }
-            .experience_category_card:nth-child(2){
-                img{
-                    height: 200px;
-                }
-            }
-        }
-        &:nth-child(4){
-            width:20%;
-            img{
-                height: 487px;
-            }
-        }
-         &:nth-child(5),
-         &:nth-child(6){
-            width:49%;
-            img{
-                height: 226px;
-            }
-        }
+        
 
     }
 }
@@ -1237,6 +1262,7 @@ header{
 
 // Footer
 footer{
+    background: #F8F8F8;
     padding: 0 0 100px;
     .footer_logo{
         max-width: 216px;

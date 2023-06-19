@@ -200,7 +200,7 @@ p {
 }
 
 .lh-29 {
-  line-height: 22px;
+  line-height: 29px;
 }
 
 .lh-36 {
@@ -411,28 +411,43 @@ header .header_menu li a:hover {
   text-decoration: none;
   color: #F67E18;
 }
-header .header_menu li a.login {
-  color: #F67E18;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  border-radius: 160px;
-  padding: 7px 18px;
+@media all and (min-width: 1024px) {
+  header .header_menu li a.login {
+    color: #F67E18;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 160px;
+    padding: 7px 18px;
+  }
+  header .header_menu li a.login:hover {
+    color: #F67E18;
+    border: 1px solid #F67E18;
+    text-transform: uppercase;
+  }
+  header .header_menu li a.signup {
+    color: #F67E18;
+    border: 1px solid #F67E18;
+    border-radius: 160px;
+    padding: 7px 18px;
+    text-transform: uppercase;
+  }
+  header .header_menu li a.signup:hover {
+    background: #F67E18;
+    color: white;
+  }
 }
-header .header_menu li a.login:hover {
-  color: #F67E18;
-  border: 1px solid #F67E18;
-  text-transform: uppercase;
-}
-header .header_menu li a.signup {
-  color: #F67E18;
-  border: 1px solid #F67E18;
-  border-radius: 160px;
-  padding: 7px 18px;
-  text-transform: uppercase;
-}
-header .header_menu li a.signup:hover {
+header .navbar-toggler-mobile {
   background: #F67E18;
+  box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+  border-radius: 5px;
+  padding: 12px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+}
+header .navbar-toggler-mobile svg {
+  margin-right: 6px;
 }
 
 .home_banner {
@@ -529,6 +544,12 @@ header .header_menu li a.signup:hover {
 }
 .home_banner .search_in_banner {
   position: relative;
+  width: 100%;
+}
+@media all and (min-width: 1200px) {
+  .home_banner .search_in_banner {
+    max-width: 627px;
+  }
 }
 .home_banner .search_in_banner input {
   border: 1px solid #F67E18;
@@ -536,12 +557,17 @@ header .header_menu li a.signup:hover {
   border-radius: 38px;
   padding: 30px;
   height: 76px;
-  min-width: 627px;
   font-weight: 500;
   font-size: 18px;
   line-height: 17px;
   color: rgba(45, 49, 52, 0.4);
   font-family: "CircularStdFont-Medium" !important;
+  width: 100%;
+}
+@media all and (min-width: 1200px) {
+  .home_banner .search_in_banner input {
+    max-width: 627px;
+  }
 }
 .home_banner .search_in_banner button {
   position: absolute;
@@ -767,38 +793,40 @@ header .header_menu li a.signup:hover {
   max-height: 487px;
   height: 100%;
 }
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) {
-  width: 22%;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) .popular_attractions_card:nth-child(1) {
-  height: 339px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) .popular_attractions_card:nth-child(2) {
-  height: 133px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) {
-  width: 22%;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) .popular_attractions_card:nth-child(1) {
-  height: 267px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) .popular_attractions_card:nth-child(2) {
-  height: 200px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) {
-  width: 28%;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) .popular_attractions_card:nth-child(1) {
-  height: 200px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) .popular_attractions_card:nth-child(2) {
-  height: 267px;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(4) {
-  width: 28%;
-}
-.popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(4) .popular_attractions_card:nth-child(1) {
-  height: 487px;
+@media all and (min-width: 1024px) {
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) {
+    width: 22%;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) .popular_attractions_card:nth-child(1) {
+    height: 339px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(1) .popular_attractions_card:nth-child(2) {
+    height: 133px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) {
+    width: 22%;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) .popular_attractions_card:nth-child(1) {
+    height: 267px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(2) .popular_attractions_card:nth-child(2) {
+    height: 200px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) {
+    width: 28%;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) .popular_attractions_card:nth-child(1) {
+    height: 200px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(3) .popular_attractions_card:nth-child(2) {
+    height: 267px;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(4) {
+    width: 28%;
+  }
+  .popular-attractions .popular_attractions .popular_attractions_grid_col:nth-child(4) .popular_attractions_card:nth-child(1) {
+    height: 487px;
+  }
 }
 .popular-attractions .popular_attractions .popular_attractions_grid_col .popular_attractions_card {
   position: relative;
@@ -868,47 +896,49 @@ header .header_menu li a.signup:hover {
   bottom: 3px;
   border-radius: 10px;
 }
-.experience_category_grid .experience_category_grid_col:nth-child(1) {
-  width: 27%;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(1) img {
-  height: 487px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(2) {
-  width: 27%;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(1) {
-  margin-bottom: 20px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(1) img {
-  height: 200px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(2) img {
-  height: 267px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(3) {
-  width: 20%;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) {
-  margin-bottom: 20px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) img {
-  height: 267px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(2) img {
-  height: 200px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(4) {
-  width: 20%;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(4) img {
-  height: 487px;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(5), .experience_category_grid .experience_category_grid_col:nth-child(6) {
-  width: 49%;
-}
-.experience_category_grid .experience_category_grid_col:nth-child(5) img, .experience_category_grid .experience_category_grid_col:nth-child(6) img {
-  height: 226px;
+@media all and (min-width: 992px) {
+  .experience_category_grid .experience_category_grid_col:nth-child(1) {
+    width: 27%;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(1) img {
+    height: 487px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(2) {
+    width: 27%;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(1) img {
+    height: 200px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(2) .experience_category_card:nth-child(2) img {
+    height: 267px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(3) {
+    width: 20%;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) img {
+    height: 267px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(2) img {
+    height: 200px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(4) {
+    width: 20%;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(4) img {
+    height: 487px;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(5), .experience_category_grid .experience_category_grid_col:nth-child(6) {
+    width: 49%;
+  }
+  .experience_category_grid .experience_category_grid_col:nth-child(5) img, .experience_category_grid .experience_category_grid_col:nth-child(6) img {
+    height: 226px;
+  }
 }
 
 .culture_tripper_wrapper {
@@ -1153,6 +1183,7 @@ header .header_menu li a.signup:hover {
 }
 
 footer {
+  background: #F8F8F8;
   padding: 0 0 100px;
 }
 footer .footer_logo {

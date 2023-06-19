@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <title>CECE Home Page</title>
   </head>
 
@@ -35,7 +36,56 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="10"
+              viewBox="0 0 13 10"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.2015 8.46768H1H12.2015Z"
+                fill="white"
+              />
+              <path
+                d="M12.2015 8.46768H1"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.46769 4.73386H1H8.46769Z"
+                fill="white"
+              />
+              <path
+                d="M8.46769 4.73386H1"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.2015 1H1H12.2015Z"
+                fill="white"
+              />
+              <path
+                d="M12.2015 1H1"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Menu
+          </span>
         </button>
 
         <div
@@ -371,7 +421,7 @@
         </p>
       </div>
       <div class="row mt-4">
-        <div class="col-lg-3">
+        <div class="col-md-3 col-6">
           <div class="seasonal-card normal-card">
             <div class="image_part">
               <img src="./images/oe-blog-img.png" alt="" class="img-fluid" />
@@ -733,7 +783,7 @@
         </p>
       </div>
       <div class="row mt-1">
-        <div class="col-lg-3">
+        <div class="col-md-3 col-6">
           <div class="seasonal-card normal-card">
             <div class="image_part">
               <img src="./images/oe-blog-img.png" alt="" class="img-fluid" />
@@ -793,8 +843,38 @@
           literature from 45 BC.
         </p>
       </div>
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row elite-trips-row">
+        <div class="col-md-4 col-6">
+          <div class="elite-trip-card normal-card">
+            <div class="image_part">
+              <img
+                src="./images/elite-dummy-trip-img1.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="tag tag-brown">Elite</div>
+              <span class="font-18 lh-21 color-FFFFFF font-basker">
+                Inspire the wanderlist <br />in you
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="elite-trip-card normal-card">
+            <div class="image_part">
+              <img
+                src="./images/elite-dummy-trip-img1.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="tag tag-brown">Elite</div>
+              <span class="font-18 lh-21 color-FFFFFF font-basker">
+                Inspire the wanderlist <br />in you
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
           <div class="elite-trip-card normal-card">
             <div class="image_part">
               <img
@@ -827,7 +907,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-3 col-6">
           <div class="elite-card normal-card">
             <div class="image_part">
               <img
@@ -887,8 +967,8 @@
           literature from 45 BC.
         </p>
       </div>
-      <div class="row mt-5">
-        <div class="col-lg-3">
+      <div class="row mt-3 mt-lg-5">
+        <div class="col-md-3 col-6">
           <div class="experience-card normal-card">
             <div class="image_part">
               <img src="./images/oe-blog-img.png" alt="" class="img-fluid" />
@@ -1199,28 +1279,32 @@
   </section>
 
   <section class="culture_tripper_newsletter">
-    <div
-      class="container text-center font-basker culture_tripper_wrapper_elite"
-    >
-      <div class="tag tag-brown d-inline-block">Elite</div>
-      <h5 class="color-222222 font-44 lh-53 my-3 font-basker">
-        Become a Culture Tripper
-      </h5>
-      <p class="font-18 lh-29 color-19182580 font-basker">
-        Signup to our news letter to save upto 40% on our unique trips
-      </p>
-      <form
-        action=""
-        class="d-flex align-items-center justify-content-center culture_form_elite"
-      >
-        <input
-          type="email"
-          placeholder="Email address"
-          class="mr-3 font-basker"
+    <div class="container text-center font-basker">
+      <div class="culture_tripper_wrapper_elite">
+        <div class="tag tag-brown d-inline-block">Elite</div>
+        <h5 class="color-222222 font-44 lh-53 my-3 font-basker">
+          Become a Culture Tripper
+        </h5>
+        <p class="font-18 lh-29 color-19182580 font-basker">
+          Signup to our news letter to save upto 40% on our unique trips
+        </p>
+        <form
+          action=""
+          class="d-flex align-items-center justify-content-center culture_form_elite"
+        >
+          <input
+            type="email"
+            placeholder="Email address"
+            class="mr-3 font-basker"
+          />
+          <button class="font-basker">Sign Up</button>
+        </form>
+        <img
+          src="./images/culture-triiper.png"
+          alt=""
+          class="img-fluid w-100"
         />
-        <button class="font-basker">Sign Up</button>
-      </form>
-      <img src="./images/culture-triiper.png" alt="" class="img-fluid w-100" />
+      </div>
     </div>
   </section>
 
