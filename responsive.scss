@@ -194,6 +194,18 @@
     }
 
 
+    .our_services{
+        .services_images{
+            img{
+                height: 123px;
+                border-radius: 10px;
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
+    }
+
     .most-liked-destinations {
         padding: 40px 0 10px;
     }

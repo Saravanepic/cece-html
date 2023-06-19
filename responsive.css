@@ -143,6 +143,15 @@
   .home_banner .search_in_banner input {
     font-size: 13px;
   }
+  .our_services .services_images img {
+    height: 123px;
+    border-radius: 10px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
   .most-liked-destinations {
     padding: 40px 0 10px;
   }

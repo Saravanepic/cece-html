@@ -80,6 +80,9 @@ table {
 }
 .font-basker{
     font-family: 'Libre Baskerville', serif!important;
+    *{
+        font-family: 'Libre Baskerville', serif!important;
+    }
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -116,6 +119,9 @@ p{
 
 
 // Font Size
+.font-12{
+    font-size: 12px;
+}
 .font-14{
     font-size: 14px;
 }
@@ -1358,4 +1364,113 @@ footer{
             color:rgba(246, 126, 24, 1)!important;
         }
     }
+}
+
+//section-normal-padding 
+.section-normal-padding{
+    section{
+        padding: 40px 0!important;
+    }
+}
+
+
+// elite_heading_banner
+.elite_heading_banner{
+    margin-top: 75px;
+    background-image: url(./images/elite-trip-banner.png);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 269px;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background: linear-gradient(90deg, #000000 0%, rgba(217, 217, 217, 0) 100%);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .contet_part{
+        z-index: 2;
+        position: relative;
+    }
+}
+
+// epic_journey_row
+.epic_journey_row{
+    .epic_journey_col{
+        img{
+            width: 71px;
+            height: 71px;
+            margin: auto;
+        }
+    }
+}
+
+//browse_by_cat
+.browse_by_cat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .elite-trip-card {
+        width: 19%;
+        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        .image_part{
+            img{
+                height: 324px!important;
+            }
+            & > span{
+                bottom: 0;
+                padding: 20px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+            }
+        }
+    }
+}
+//browse_by_cat_elite
+.browse_by_cat_elite{
+    div.col-12{
+        padding: 0!important;
+    }
+    div.col-12:nth-child(odd){
+        margin-top: -40px;
+    }
+    .elite-trip-card {
+        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        .image_part{
+            img{
+                // height: 324px!important;
+            }
+            & > span{
+                bottom: 0;
+                padding: 20px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+            }
+        }
+    } 
+}
+
+
+//exclusive_journeys
+.exclusive_journeys{
+    .elite-trip-card {
+        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        .image_part{
+            img{
+                height: 413px!important;
+            }
+            & > span{
+                bottom: 0;
+                padding: 20px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+            }
+        }
+        .contet_part{
+            padding: 0 10px;
+        }
+    } 
 }

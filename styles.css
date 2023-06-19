@@ -86,6 +86,9 @@ table {
 .font-basker {
   font-family: "Libre Baskerville", serif !important;
 }
+.font-basker * {
+  font-family: "Libre Baskerville", serif !important;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "CircularStdFont-Bold" !important;
@@ -121,6 +124,10 @@ p {
 
 .color-22222259 {
   color: rgba(34, 34, 34, 0.3490196078);
+}
+
+.font-12 {
+  font-size: 12px;
 }
 
 .font-14 {
@@ -1268,4 +1275,87 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: rgb(246, 126, 24) !important;
+}
+
+.section-normal-padding section {
+  padding: 40px 0 !important;
+}
+
+.elite_heading_banner {
+  margin-top: 75px;
+  background-image: url(./images/elite-trip-banner.png);
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 269px;
+  position: relative;
+}
+.elite_heading_banner::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #000000 0%, rgba(217, 217, 217, 0) 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.elite_heading_banner .contet_part {
+  z-index: 2;
+  position: relative;
+}
+
+.epic_journey_row .epic_journey_col img {
+  width: 71px;
+  height: 71px;
+  margin: auto;
+}
+
+.browse_by_cat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.browse_by_cat .elite-trip-card {
+  width: 19%;
+  box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+}
+.browse_by_cat .elite-trip-card .image_part img {
+  height: 324px !important;
+}
+.browse_by_cat .elite-trip-card .image_part > span {
+  bottom: 0;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+}
+
+.browse_by_cat_elite div.col-12 {
+  padding: 0 !important;
+}
+.browse_by_cat_elite div.col-12:nth-child(odd) {
+  margin-top: -40px;
+}
+.browse_by_cat_elite .elite-trip-card {
+  box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+}
+.browse_by_cat_elite .elite-trip-card .image_part > span {
+  bottom: 0;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+}
+
+.exclusive_journeys .elite-trip-card {
+  box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+}
+.exclusive_journeys .elite-trip-card .image_part img {
+  height: 413px !important;
+}
+.exclusive_journeys .elite-trip-card .image_part > span {
+  bottom: 0;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 12.46%, rgba(0, 0, 0, 0) 83.78%);
+}
+.exclusive_journeys .elite-trip-card .contet_part {
+  padding: 0 10px;
 }/*# sourceMappingURL=styles.css.map */
