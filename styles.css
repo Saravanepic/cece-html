@@ -250,6 +250,14 @@ p {
   background: linear-gradient(97.04deg, #F67E18 0.69%, #F9A156 112.31%);
 }
 
+.bg-orange {
+  background: rgba(246, 126, 24, 0.05);
+}
+
+.bg-green {
+  background: rgba(29, 215, 29, 0.05);
+}
+
 .viewmore {
   font-size: 16px;
   line-height: 18px;
@@ -701,7 +709,7 @@ header .header_menu li a.signup:hover {
 }
 
 .top-seasonal-trips {
-  padding: 50px 0;
+  padding: 10px 0 50px 0;
 }
 
 .elite-trips {
@@ -824,7 +832,7 @@ header .header_menu li a.signup:hover {
 }
 
 .experience-categories {
-  padding: 35px 0 0;
+  padding: 35px 0 20px;
 }
 
 .experience_category_grid {

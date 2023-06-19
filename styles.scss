@@ -229,6 +229,14 @@ p{
     }
 }
 
+// backgrounds
+.bg-orange{
+    background: rgba(246, 126, 24, 0.05);
+}
+.bg-green{
+    background: rgba(29, 215, 29, 0.05);
+}
+
 
 // Links
 .viewmore{
@@ -720,7 +728,7 @@ header{
 
 // top-seasonal-trips
 .top-seasonal-trips{
-    padding: 50px 0;
+    padding: 10px 0 50px 0;
 }
 
 // elite-trips
@@ -862,7 +870,7 @@ header{
 
 // experience-categories
 .experience-categories{
-    padding: 35px 0 0;
+    padding: 35px 0 20px;
 }
 
 // Used as common 
