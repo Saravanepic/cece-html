@@ -1720,6 +1720,11 @@ footer{
     }
 }
 
+#highlightsTabContent{
+    .tab-pane{
+        max-width: 100%!important;
+    }
+}
 #otherinfoTabContent,
 #highlightsTabContent{
     .tab-pane{
@@ -1925,5 +1930,46 @@ footer{
             }
         }
         
+    }
+}
+.four_image_grid{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 50% 50%;
+    height: 324px;
+    gap: 5px;
+    img{
+        box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+    img{
+        &:nth-child(1),&:nth-child(4){
+            height: 324px;
+        }
+        &:nth-child(2),&:nth-child(3){
+            height: 158px;
+        }
+        &:nth-child(2){
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        &:nth-child(3){
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+    }
+    @media all and (max-width:767px){
+        height: 153px;
+        img{
+            &:nth-child(1),&:nth-child(4){
+                height: 153px;
+            }
+            &:nth-child(2),&:nth-child(3){
+                height: 73px;
+            }
+        }
+       
     }
 }
