@@ -104,6 +104,9 @@
     height: 13px;
     margin-left: 7px;
   }
+  .mt-70px {
+    margin-top: 60px;
+  }
   .tag {
     font-size: 11px;
     line-height: 18px;
@@ -228,6 +231,22 @@
     left: 70px !important;
   }
   .home_banner .search_in_banner input {
+    font-size: 13px;
+  }
+  .search_banner .carousel-inner .carousel-item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom right;
+       object-position: bottom right;
+  }
+  .search_banner .content_part {
+    padding: 16px;
+  }
+  .search_banner .content_part h2::after {
+    left: 70px !important;
+  }
+  .search_banner .search_in_banner input {
     font-size: 13px;
   }
   .our_services .services_images img {
