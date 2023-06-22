@@ -226,7 +226,7 @@ p{
 // Tags
 .tag{
     border-radius: 4px;
-    padding: 1px 8px;
+    padding: 2px 8px;
     font-size: 14px;
     line-height: 22px;
     color: white;
@@ -1850,7 +1850,134 @@ footer{
     }
 }
 
+.orange_box{
+    background: #FFFFFF;
+    border: 1px solid #CDA65C;
+    padding: 27px 74px!important;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none!important;
+    li{
+        font-size: 14px;
+        line-height: 22px;
+        color: #222222;
+        span{
+            background: #F67E18;
+            font-size: 14px;
+            line-height: 22px;
+            color: white!important;
+            padding: 7px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+    }
+}
 
+
+
+#accordion_itinerary{
+    .card{
+        border: none;
+        border-radius: 0;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+        padding: 20px 0;
+        .card-header{
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            button{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                color: #222222;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                width: 100%;
+                background-image: url(./images/dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: 100% 5px;
+                &.collapsed{
+                    background-image: url(./images/dropdown-open.svg);
+                    
+                }
+                span{
+                    font-size: 12px;
+                    line-height: 19px;
+                    font-weight: 400;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        display: inline;
+                        width: 12px;
+                        height: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 50%;
+                        top:50%;
+                        transform: translateY(-50%);
+                        left: -18px;
+                        z-index: 1;
+                    }
+                }
+                &:hover{
+                    text-decoration: none;
+                    color: #F67E18;
+                }
+                &:focus{
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+            }
+        }
+        .card-body{
+            padding: 10px 0 0;
+            ul,p{
+                list-style: disc;
+                padding-inline-start: 17px;
+                font-size: 14px;
+                line-height: 22px;
+                color: #222222;
+            }
+        }
+        &:nth-child(1){
+            .card-header{
+                button{
+                    span{
+                        &::before{
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    position: relative;
+    padding: 0 0 20px 12px;
+    &::before{
+        content: "";
+        // background-image: url(./images/heading-after.svg);
+        // background-repeat: no-repeat;
+        position: absolute;
+        transition: 0.5s ease;
+        width: 1px;
+        height: 100%;
+        border: 1px dashed #000000;
+        top: 50%;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        
+    }
+}
+
+
+
+// Image Grid Blocks
 .three_image_grid{
     img{
         box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
@@ -1967,7 +2094,7 @@ footer{
                 height: 153px;
             }
             &:nth-child(2),&:nth-child(3){
-                height: 73px;
+                height: 75px;
             }
         }
        
