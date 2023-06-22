@@ -1163,7 +1163,7 @@ header .navbar-toggler-mobile svg {
   margin: 55px 0 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px 75px;
+  gap: 75px 25px;
 }
 .popular-travelogues-categories .travel_card_grid .travel_cardblock .travel_cardblock_img_part img {
   border-radius: 10px;
