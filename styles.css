@@ -712,7 +712,7 @@ header .navbar-toggler-mobile svg {
   all: unset;
   background: transparent;
   border-radius: 15px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   margin: 0 0 20px;
   display: block;
   transition: 0.5s ease;
@@ -756,6 +756,8 @@ header .navbar-toggler-mobile svg {
 .our_services .services_accordin .card-body {
   padding: 10px 0 0;
   font-size: 16px;
+  font-family: "CircularStdFont-Normal" !important;
+  font-weight: 400 !important;
   line-height: 158%;
   color: #000000;
   max-width: 400px;
@@ -786,6 +788,16 @@ header .navbar-toggler-mobile svg {
 }
 .our_services .services_images {
   position: relative;
+}
+.our_services .services_images img {
+  display: none;
+}
+.our_services .services_images img.active {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 408px;
+  width: 100%;
 }
 @media all and (min-width: 1200px) {
   .our_services .services_images::before {

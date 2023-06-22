@@ -220,13 +220,31 @@
               <img
                 src="./images/services-side-travelogues.png"
                 alt=""
-                id=""
+                id="service-img-1"
+                class="img-fluid active"
+              />
+              <img
+                src="./images/popular-attraction-6.png"
+                alt=""
+                id="service-img-2"
+                class="img-fluid"
+              />
+              <img
+                src="./images/services-side-travelogues.png"
+                alt=""
+                id="service-img-3"
+                class="img-fluid"
+              />
+              <img
+                src="./images/services-side-travelogues.png"
+                alt=""
+                id="service-img-4"
                 class="img-fluid"
               />
             </div>
             <div class="col-md-6 col-12 pt-4 pt-lg-0 services_accordin">
               <div id="accordion">
-                <div class="card">
+                <div class="card active">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
                       <button
@@ -1528,5 +1546,47 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+
+    <!--  -->
+    <script>
+      $ = jQuery;
+
+      $("#headingOne").click(function () {
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(".services_images").find("img").removeClass("active");
+        $("#service-img-1").addClass("active");
+        $(".services_grid_images").find("div").removeClass("active");
+        $("#service-travelogues").addClass("active");
+      });
+
+      $("#headingTwo").click(function () {
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(".services_images").find("img").removeClass("active");
+        $("#service-img-2").addClass("active");
+        $(".services_grid_images").find("div").removeClass("active");
+        $("#service-online").addClass("active");
+      });
+
+      $("#headingThree").click(function () {
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(".services_images").find("img").removeClass("active");
+        $("#service-img-3").addClass("active");
+        $(".services_grid_images").find("div").removeClass("active");
+        $("#service-activity").addClass("active");
+      });
+
+      $("#headingFour").click(function () {
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(".services_images").find("img").removeClass("active");
+        $("#service-img-4").addClass("active");
+        $(".services_grid_images").find("div").removeClass("active");
+        $("#service-elite").addClass("active");
+      });
+    </script>
+    <!--  -->
   </body>
 </html>

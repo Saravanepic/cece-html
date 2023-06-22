@@ -728,7 +728,7 @@ header{
             // background: #F2F2F2;   
             background: transparent;
             border-radius: 15px;
-            padding: 10px 30px;
+            padding: 20px 30px;
             margin: 0 0 20px;
             display: block;
             transition: 0.5s ease;
@@ -774,6 +774,8 @@ header{
         .card-body{
             padding: 10px 0 0;
             font-size: 16px;
+            font-family: "CircularStdFont-Normal"!important;
+            font-weight: 400!important;
             line-height: 158%;
             color: #000000;
             max-width: 400px;
@@ -807,6 +809,15 @@ header{
     }
     .services_images{
         position: relative;
+        img{
+            display: none;
+            &.active{
+                display: block;
+                object-fit: cover;
+                max-height: 408px;
+                width: 100%;
+            }
+        }
         @media all and (min-width:1200px){
             &::before{
                 content: "";
