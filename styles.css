@@ -281,6 +281,27 @@ p {
 .tag.tag-orange {
   background: linear-gradient(97.04deg, #F67E18 0.69%, #F9A156 112.31%);
 }
+.tag.tag-attractions {
+  padding: 0;
+}
+.tag.tag-attractions span {
+  color: white;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag.tag-attractions span::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./images/attraction.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s ease;
+  width: 18px;
+  height: 16px;
+  margin-right: 8px;
+}
 
 .bg-orange {
   background: rgba(246, 126, 24, 0.05);
@@ -1067,9 +1088,13 @@ header .navbar-toggler-mobile svg {
 }
 .culture_tripper_wrapper .image_part img {
   border-radius: 10px 20px 40px 80px;
-  min-height: 369px;
+  height: 369px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.culture_tripper_wrapper .image_part.mh-lg-250 img {
+  height: 250px;
+  min-height: auto;
 }
 .culture_tripper_wrapper .image_part::after {
   content: "";
@@ -1149,6 +1174,17 @@ header .navbar-toggler-mobile svg {
   content: "";
   opacity: 0;
   transition: 0.5s ease;
+}
+.culture_tripper_wrapper.dots-left::after {
+  content: "";
+  background-image: url(./images/culture-graphic-1.png);
+  width: 95px;
+  height: 91px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -4px;
+  left: -6px;
 }
 .culture_tripper_wrapper::after {
   content: "";
@@ -1296,6 +1332,21 @@ header .navbar-toggler-mobile svg {
   transform: rotate(90deg);
 }
 
+.cece_footer {
+  padding: 30px 0;
+  background: #fef8f3;
+}
+.cece_footer ul li {
+  margin: 0 20px;
+}
+.cece_footer ul li a {
+  transition: 0.5s ease;
+}
+.cece_footer ul li a:hover {
+  text-decoration: none;
+  color: rgb(246, 126, 24) !important;
+}
+
 footer {
   background: #F8F8F8;
   padding: 0 0 100px;
@@ -1304,6 +1355,7 @@ footer .footer_logo {
   max-width: 216px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-top: 0 !important;
 }
 footer .footer_first {
   max-width: 1110px;
