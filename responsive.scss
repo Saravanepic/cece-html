@@ -125,6 +125,17 @@
         line-height: 30px;
     }
 
+    .section-normal-padding{
+        section{
+            &.pb-sm-0{
+                padding-bottom: 0!important;
+            }        
+        }
+    }
+    .pb-sm-0{
+        padding-bottom: 0!important;
+    }
+
     .heading-after{
         &::after{
             width: 12px;
@@ -242,6 +253,16 @@
     }
 
 
+    header{
+        background-color: rgba(255, 255, 255, 1);
+        padding: 8px 0;
+        .site-logo{
+            max-width: 136px;
+        }
+    }
+    .mt-sm-90px{
+        margin-top: 90px;
+    }
 
     // 
     .header_menu{
@@ -666,6 +687,42 @@
     }
 
 
+    // 
+    .browse_by_cat{
+        // padding: 0 10px;
+        gap: 4px;
+        .elite-trip-card{
+            width: 32%;
+            &:nth-last-child(1),&:nth-last-child(2){
+                width: 49%;
+            }
+            .image_part{
+                img{
+                    height: 200px!important;
+                }
+            }
+        }
+    }
+    .browse_by_cat_elite{
+        margin: 0!important;
+        div.col-12:nth-child(odd){
+            margin-top: 0;
+        }
+        .elite-trip-card{
+            .image_part{
+                img{
+                    height: 200px!important;
+                    object-position: bottom;
+                }
+                & > span{
+                    p{
+                        padding-top: 6px!important;
+                    }
+                }
+            }
+        }
+    }
+
     // Elite trips Inner page
     .trip-intro-banner{
         .info-items-block{
@@ -692,7 +749,13 @@
             line-height: 16px;
             &::after{
                 margin-left: 5px;
-            }     
+            }    
+            &:last-child{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 120px;
+            } 
         }
     }
     .why_pick_elite{
@@ -722,6 +785,7 @@
 
     #accordion_itinerary{
         .card{
+            padding: 15px 0;
             .card-header{
                 button{
                     font-size: 14px;

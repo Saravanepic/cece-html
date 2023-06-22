@@ -87,6 +87,12 @@
   .lh-sm-30 {
     line-height: 30px;
   }
+  .section-normal-padding section.pb-sm-0 {
+    padding-bottom: 0 !important;
+  }
+  .pb-sm-0 {
+    padding-bottom: 0 !important;
+  }
   .heading-after::after {
     width: 12px;
     height: 13px;
@@ -164,6 +170,16 @@
     font-size: 12px !important;
     line-height: 14px !important;
     margin-bottom: 8px !important;
+  }
+  header {
+    background-color: rgb(255, 255, 255);
+    padding: 8px 0;
+  }
+  header .site-logo {
+    max-width: 136px;
+  }
+  .mt-sm-90px {
+    margin-top: 90px;
   }
   .header_menu ul {
     flex-direction: column;
@@ -496,6 +512,32 @@
     line-height: 13px !important;
     margin-top: 12px;
   }
+  .browse_by_cat {
+    gap: 4px;
+  }
+  .browse_by_cat .elite-trip-card {
+    width: 32%;
+  }
+  .browse_by_cat .elite-trip-card:nth-last-child(1), .browse_by_cat .elite-trip-card:nth-last-child(2) {
+    width: 49%;
+  }
+  .browse_by_cat .elite-trip-card .image_part img {
+    height: 200px !important;
+  }
+  .browse_by_cat_elite {
+    margin: 0 !important;
+  }
+  .browse_by_cat_elite div.col-12:nth-child(odd) {
+    margin-top: 0;
+  }
+  .browse_by_cat_elite .elite-trip-card .image_part img {
+    height: 200px !important;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .browse_by_cat_elite .elite-trip-card .image_part > span p {
+    padding-top: 6px !important;
+  }
   .trip-intro-banner .info-items-block .info-item {
     padding: 0 20px;
   }
@@ -517,6 +559,12 @@
   }
   .inner-breadcrumb span::after {
     margin-left: 5px;
+  }
+  .inner-breadcrumb span:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
   }
   .why_pick_elite {
     display: grid;
@@ -541,6 +589,9 @@
     margin-right: 6px;
     width: 30px;
     height: 30px;
+  }
+  #accordion_itinerary .card {
+    padding: 15px 0;
   }
   #accordion_itinerary .card .card-header button {
     font-size: 14px;
