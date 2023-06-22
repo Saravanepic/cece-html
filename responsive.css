@@ -6,6 +6,9 @@
   .font-sm-12 {
     font-size: 12px;
   }
+  .font-sm-13 {
+    font-size: 13px;
+  }
   .font-sm-14 {
     font-size: 14px;
   }
@@ -48,6 +51,9 @@
   .lh-sm-16 {
     line-height: 16px;
   }
+  .lh-sm-17 {
+    line-height: 17px;
+  }
   .lh-sm-18 {
     line-height: 18px;
   }
@@ -74,6 +80,9 @@
   }
   .lh-sm-29 {
     line-height: 29px;
+  }
+  .lh-sm-30 {
+    line-height: 30px;
   }
   .heading-after::after {
     width: 12px;
@@ -262,6 +271,15 @@
     -o-object-position: bottom;
        object-position: bottom;
   }
+  .elite-trip-card .image_part span {
+    font-size: 12px;
+    line-height: 21px;
+    bottom: 10px;
+    padding: 0 10px;
+  }
+  .elite-trip-card .image_part span br {
+    display: none;
+  }
   .elite-trips {
     padding: 30px 0 0;
   }
@@ -294,6 +312,10 @@
     height: 140px;
     -o-object-position: bottom;
        object-position: bottom;
+  }
+  .experience_category_grid .experience_category_grid_col .experience_category_card .content_part span {
+    font-size: 14px;
+    line-height: 17px;
   }
   .culture_tripper_wrapper {
     margin: 40px 0;
@@ -412,6 +434,10 @@
   }
   footer .footer_logo {
     margin-bottom: 0 !important;
+  }
+  footer .footer_first > div {
+    font-size: 15px;
+    line-height: 18px;
   }
   footer .footer_first .things_menu {
     display: flex;
