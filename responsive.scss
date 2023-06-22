@@ -351,6 +351,13 @@
 
 
     .our_services{
+        overflow: hidden;
+        .container{
+            &::after{
+                top: -55px;
+                right: -25px;
+            }
+        }
         .services_images{
             img{
                 height: 123px;

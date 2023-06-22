@@ -249,6 +249,13 @@
   .search_banner .search_in_banner input {
     font-size: 13px;
   }
+  .our_services {
+    overflow: hidden;
+  }
+  .our_services .container::after {
+    top: -55px;
+    right: -25px;
+  }
   .our_services .services_images img {
     height: 123px;
     border-radius: 10px;
