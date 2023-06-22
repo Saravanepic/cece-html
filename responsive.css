@@ -90,8 +90,14 @@
   .section-normal-padding section.pb-sm-0 {
     padding-bottom: 0 !important;
   }
+  .section-normal-padding section.pt-sm-0 {
+    padding-top: 0 !important;
+  }
   .pb-sm-0 {
     padding-bottom: 0 !important;
+  }
+  .pt-sm-0 {
+    padding-top: 0 !important;
   }
   .heading-after::after {
     width: 12px;
@@ -177,6 +183,11 @@
   }
   header .site-logo {
     max-width: 136px;
+  }
+  header .navbar-toggler-mobile {
+    padding: 7px 9px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .mt-sm-90px {
     margin-top: 90px;

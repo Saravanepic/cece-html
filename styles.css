@@ -1625,6 +1625,49 @@ footer a:hover {
           padding-inline-start: 15px;
 }
 
+.sticky-atc {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  z-index: 1;
+}
+.sticky-atc a {
+  background: #F67E18;
+  border-radius: 50px;
+  padding: 14px 21px;
+  border: 2px solid #F67E18;
+  font-family: "CircularStdFont-Bold" !important;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  width: 90%;
+  margin: auto;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticky-atc a:hover {
+  background: white;
+  color: #F67E18;
+  text-decoration: none;
+}
+.sticky-atc a:hover::after {
+  background-image: url(./images/arrow-right-orange.svg);
+}
+.sticky-atc a::after {
+  content: "";
+  background-image: url(./images/arrow-right.svg);
+  transition: 0.5s ease;
+  width: 22px;
+  height: 16px;
+  margin-left: 5px;
+  opacity: 1;
+  display: inline-block;
+}
+
 .elite-trip-form {
   padding: 57px 51px;
   display: flex;

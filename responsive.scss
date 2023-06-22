@@ -129,12 +129,18 @@
         section{
             &.pb-sm-0{
                 padding-bottom: 0!important;
-            }        
+            }  
+            &.pt-sm-0{
+                padding-top: 0!important;
+            }      
         }
     }
     .pb-sm-0{
         padding-bottom: 0!important;
     }
+    .pt-sm-0{
+        padding-top: 0!important;
+    }      
 
     .heading-after{
         &::after{
@@ -258,6 +264,11 @@
         padding: 8px 0;
         .site-logo{
             max-width: 136px;
+        }
+        .navbar-toggler-mobile{
+            padding: 7px 9px;
+            font-size: 14px;
+            line-height: 17px;
         }
     }
     .mt-sm-90px{
