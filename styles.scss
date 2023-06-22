@@ -64,6 +64,13 @@ table {
     font-display: swap;
     font-weight: 400;
 }
+@font-face {
+    font-family: "SangBleuSunrise";
+    src: url(./fonts/SangBleuSunrise.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 400;
+}
+
 *{
     font-family: "CircularStdFont-Normal"!important;
     // font-weight: 500!important;
@@ -77,6 +84,12 @@ table {
 }
 .csf-bold{
     font-family: "CircularStdFont-Bold"!important;
+}
+.font-sunrise{
+    font-family: "SangBleuSunrise"!important;
+    *{
+        font-family: "SangBleuSunrise"!important;
+    }
 }
 .font-basker{
     font-family: 'Libre Baskerville', serif!important;
@@ -253,10 +266,14 @@ p{
 }
 .bg-light-yellow{
     background: #faf7ef;
+    // margin: 40px 0!important;
 }
 
 
 // Custom Widths
+.mw-280px{
+    max-width: 280px;
+}
 .mw-477px{
     max-width: 477px;
 }
@@ -265,6 +282,9 @@ p{
 }
 .mw-358px{
     max-width: 358px;
+}
+.mw-1320px{
+    max-width: 1320px!important;
 }
 
 // Custom Padding
@@ -462,7 +482,7 @@ header{
     }
     background-color: rgba(255,255,255,0.2);
     padding: 18px 0;
-    z-index: 9;
+    z-index: 99;
     
     .site-logo{
         max-width: 216px;
@@ -1463,6 +1483,9 @@ footer{
 .section-normal-padding{
     section{
         padding: 40px 0!important;
+        // &.bg-light-yellow{
+        //     padding: 50px 0!important;
+        // }
     }
     .pb-80px {
         padding-bottom: 80px !important;
@@ -1477,7 +1500,7 @@ footer{
 // elite_heading_banner
 .elite_heading_banner{
     background-image: url(./images/elite-trip-banner.png);
-    background-size: contain;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
