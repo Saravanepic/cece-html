@@ -1751,8 +1751,8 @@ footer a:hover {
 .trip-intro-banner .info-items-block {
   margin: 20px 0 0;
   padding: 10px 0;
-  border-top: 1px solid rgba(34, 34, 34, 0.5019607843);
-  border-bottom: 1px solid rgba(34, 34, 34, 0.5019607843);
+  border-top: 0.5px solid rgba(34, 34, 34, 0.5019607843);
+  border-bottom: 0.5px solid rgba(34, 34, 34, 0.5019607843);
   text-align: center;
   overflow: hidden;
 }
@@ -2204,5 +2204,114 @@ footer a:hover {
   }
   .four_image_grid img:nth-child(2), .four_image_grid img:nth-child(3) {
     height: 75px;
+  }
+}
+
+.eight_image_grid {
+  padding: 30px 0;
+  display: grid;
+  gap: 5px;
+}
+.eight_image_grid img {
+  box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .eight_image_grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 160px 160px;
+    overflow-x: scroll;
+  }
+  .eight_image_grid img:nth-child(1) {
+    height: 324px;
+    grid-row: 1/-1;
+  }
+  .eight_image_grid img:nth-child(2) {
+    height: 158px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .eight_image_grid img:nth-child(3) {
+    height: 158px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .eight_image_grid img:nth-child(4) {
+    height: 324px;
+    grid-row: 1/-1;
+    grid-column: 3/4;
+  }
+  .eight_image_grid img:nth-child(5) {
+    height: 158px;
+    grid-row: 1/2;
+    grid-column: 4/6;
+  }
+  .eight_image_grid img:nth-child(6) {
+    height: 158px;
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+  .eight_image_grid img:nth-child(7) {
+    height: 158px;
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  .eight_image_grid img:nth-child(8) {
+    height: 324px;
+    grid-row: 1/-1;
+  }
+}
+@media all and (max-width: 767px) {
+  .eight_image_grid {
+    padding: 20px 0 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 92.5px 92.5px;
+    overflow-x: scroll;
+  }
+  .eight_image_grid img {
+    width: 115px;
+  }
+  .eight_image_grid img:nth-child(1) {
+    height: 188px;
+    grid-row: 1/-1;
+  }
+  .eight_image_grid img:nth-child(2) {
+    height: 91px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .eight_image_grid img:nth-child(3) {
+    height: 91px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .eight_image_grid img:nth-child(4) {
+    height: 188px;
+    grid-row: 1/-1;
+    grid-column: 3/4;
+  }
+  .eight_image_grid img:nth-child(5) {
+    height: 91px;
+    grid-row: 1/2;
+    grid-column: 4/6;
+    width: 100%;
+  }
+  .eight_image_grid img:nth-child(6) {
+    height: 91px;
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+  .eight_image_grid img:nth-child(7) {
+    height: 91px;
+    grid-row: 2/3;
+    grid-column: 5/6;
+  }
+  .eight_image_grid img:nth-child(8) {
+    height: 188px;
+    grid-row: 1/-1;
   }
 }/*# sourceMappingURL=styles.css.map */
