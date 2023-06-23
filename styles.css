@@ -2484,4 +2484,36 @@ footer a:hover {
   font-size: 14px;
   line-height: 22px;
   color: #222222;
+}
+
+#elite-innercarouselIndicators .carousel-control-prev {
+  left: -20px;
+}
+#elite-innercarouselIndicators .carousel-control-next {
+  right: -20px;
+}
+#elite-innercarouselIndicators .carousel-control-prev,
+#elite-innercarouselIndicators .carousel-control-next {
+  background: #FFFFFF;
+  box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 1;
+  transition: 0.5s ease;
+  top: 50%;
+}
+#elite-innercarouselIndicators .carousel-control-prev:hover,
+#elite-innercarouselIndicators .carousel-control-next:hover {
+  background: rgba(246, 126, 24, 0.75);
+}
+#elite-innercarouselIndicators .carousel-control-prev-icon {
+  background-image: url("./images/arrow-left.png");
+  width: 6px;
+  height: 12px;
+}
+#elite-innercarouselIndicators .carousel-control-next-icon {
+  background-image: url("./images/arrow-right.png");
+  width: 6px;
+  height: 12px;
 }/*# sourceMappingURL=styles.css.map */

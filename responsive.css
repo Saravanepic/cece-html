@@ -746,4 +746,20 @@
     width: 7px;
     height: 9px;
   }
+  #elite-innercarouselIndicators .carousel-control-prev {
+    left: -10px;
+  }
+  #elite-innercarouselIndicators .carousel-control-next {
+    right: -10px;
+  }
+  #elite-innercarouselIndicators .carousel-control-prev,
+#elite-innercarouselIndicators .carousel-control-next {
+    width: 20px;
+    height: 20px;
+  }
+  #elite-innercarouselIndicators .carousel-control-prev-icon,
+#elite-innercarouselIndicators .carousel-control-next-icon {
+    width: 5px;
+    height: 8px;
+  }
 }/*# sourceMappingURL=responsive.css.map */

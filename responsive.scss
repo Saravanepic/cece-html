@@ -981,4 +981,24 @@
             // } 
         }
     }
+
+    #elite-innercarouselIndicators{
+        .carousel-control-prev{
+            left: -10px;
+        }
+        .carousel-control-next{
+            right: -10px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            width: 20px;
+            height: 20px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+            width: 5px;
+            height: 8px;
+        }
+        
+    }
 }
