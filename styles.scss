@@ -233,6 +233,11 @@ p{
 }
 
 
+// Curosor
+.cursor-pointer{
+    cursor: pointer;
+}
+
 // Line Clamp
 .line-clamp-2{
     display: -webkit-box;
@@ -357,6 +362,12 @@ p{
             background-image: url(./images/arrow-right.svg);
         }
     }
+}
+
+.link-normal{
+    color: rgba(34, 34, 34, 0.8);
+    text-decoration-line: underline;
+    text-transform: capitalize;
 }
 
 
@@ -2036,6 +2047,9 @@ footer{
     bottom: 30px;
     width: 100%;
     z-index: 1;
+    &.b-0{
+        bottom: 0;
+    }
     a{
         background: #F67E18;
         border-radius: 50px;
@@ -2758,7 +2772,8 @@ footer{
         border-radius: 5px;
         border: 1px solid rgba(34, 34, 34, 0.20);
         background: #FFF;
-        box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+        // box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+        box-shadow: 1px 1px 10px 0px rgba(224, 224, 224, 0.25);
         padding: 11px 9px;
         transition: 0.5s ease;
         margin-right: 15px;
@@ -2842,4 +2857,146 @@ footer{
         }
     }
    
+}
+
+
+.trip-attributes{
+    padding: 13px 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .trip-att-block{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 45px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #222222;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+.promoted_experiences{
+    .normal-card{
+        transition: 0.5s ease;
+        .content_part{
+            position: relative;
+            img{
+                position: absolute;
+                bottom: 30px;
+                right: 18px;
+                opacity: 0;
+            }
+        }
+        &:hover{
+            .content_part{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.product_content_wrap{
+    .product_content_block{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+
+        // 
+        .included{
+            li{
+                display: flex;
+                align-items: flex-start;
+                &::before{
+                    content: "";
+                    background-image: url(./images/included-tick.svg);
+                    background-repeat: no-repeat;
+                    transition: 0.5s ease;
+                    min-width: 16px;
+                    width:16px;
+                    height: 16px;
+                    margin-right: 12px;
+                    opacity: 1;
+                    display: inline-flex;
+                    background-size: contain;
+                    background-position: center;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+
+        }
+        .exclded{
+            li{
+                display: flex;
+                align-items: flex-start;
+                &::before{
+                    content: "";
+                    background-image: url(./images/excluded-cros.svg);
+                    background-repeat: no-repeat;
+                    transition: 0.5s ease;
+                    width:10px;
+                    min-width:10px;
+                    height: 16px;
+                    margin-right: 12px;
+                    opacity: 1;
+                    display: inline-flex;
+                    background-size: contain;
+                    background-position: center;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+        .additional{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: disc;
+            padding-inline-start: 30px;
+            li{
+                width: 48%;
+            }
+        }
+        .expect_flow{
+            .expect_block{
+                position: relative;
+                padding: 0 0 30px 30px;
+                &::before{
+                    content: "";
+                    border-right: 1px solid #000000;
+                    position: absolute;
+                    top: 5px;
+                    left: 10px;
+                    height: 100%;
+                }
+                h5{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        border-right: 1px solid #000000;
+                        position: absolute;
+                        border-radius: 18px;
+                        background: #222;
+                        width: 18px;
+                        height: 18px;
+                        top: 5px;
+                        left: -28px;
+                        
+                    }
+                }
+
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
