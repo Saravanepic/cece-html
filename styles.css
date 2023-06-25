@@ -308,6 +308,12 @@ p {
 .tag.tag-orange {
   background: linear-gradient(97.04deg, #F67E18 0.69%, #F9A156 112.31%);
 }
+.tag.tag-underline {
+  text-decoration: underline;
+  color: #222222;
+  padding: 0;
+  font-family: "CircularStdFont-Bold" !important;
+}
 .tag.tag-attractions {
   padding: 0;
 }
@@ -1440,8 +1446,26 @@ header .navbar-toggler-mobile svg {
 .latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart img {
   border-radius: 3px;
   min-height: 375px;
+  height: 375px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart img.h-321 {
+  min-height: 321px;
+  height: 321px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart img.h-267 {
+  min-height: 267px;
+  height: 267px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.latest-travelogues-categories .latest-travelogues-wrap .show_limit_two_cards {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+  padding: 40px 0 0;
+  margin: 30px 0 0;
 }
 
 .popular-travelogues-categories {
