@@ -287,7 +287,7 @@ p{
         text-decoration: underline;
         color: #222222;
         padding: 0;
-        font-family: "CircularStdFont-Bold"!important;
+        font-family: "CircularStdFont-Bold";
     }
     &.tag-attractions{
         padding: 0;
@@ -1376,6 +1376,20 @@ header{
     padding: 25px;
     margin: 80px 0;
     position: relative;
+    &.receive_letter{
+        &::after{
+            width: 72px;
+            height: 69px;
+            top: 9px;
+            left: 7px;
+        }
+        .content_part{
+            &::before{
+                content: "";
+                display: none;
+            }
+        }
+    }
     .image_part{
         position: relative;
         img{
@@ -2439,6 +2453,19 @@ footer{
         grid-template-rows: 50% 50%;
         height: 324px;
         gap: 5px;
+        &.grid_equal{
+            height: 410px;
+            grid-template-columns: 50% 50%; 
+            img{
+                &:nth-child(1){
+                    height: 410px;
+                }
+                &:nth-child(2),&:nth-child(3){
+                    height: 200px;
+                }
+               
+            }
+        }
         img{
             &:nth-child(1){
                 height: 324px;
@@ -3111,6 +3138,45 @@ footer{
         }
     }
 }
+.included{
+    &.grid-2{
+        @media all and (min-width:992px){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px 70px;
+        }
+        li{
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0;
+        }
+    }
+    li{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        &::before{
+            content: "";
+            background-image: url(./images/included-tick.svg);
+            background-repeat: no-repeat;
+            transition: 0.5s ease;
+            min-width: 16px;
+            width:16px;
+            height: 16px;
+            margin-right: 12px;
+            opacity: 1;
+            display: inline-flex;
+            background-size: contain;
+            background-position: center;
+            position: relative;
+            top: 5px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+}
 .product_content_wrap{
     .product_content_block{
         padding-bottom: 30px;
@@ -3118,33 +3184,6 @@ footer{
         border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 
         // 
-        .included{
-            li{
-                display: flex;
-                align-items: flex-start;
-                margin-bottom: 15px;
-                &::before{
-                    content: "";
-                    background-image: url(./images/included-tick.svg);
-                    background-repeat: no-repeat;
-                    transition: 0.5s ease;
-                    min-width: 16px;
-                    width:16px;
-                    height: 16px;
-                    margin-right: 12px;
-                    opacity: 1;
-                    display: inline-flex;
-                    background-size: contain;
-                    background-position: center;
-                    position: relative;
-                    top: 5px;
-                }
-                &:last-child{
-                    margin-bottom: 0;
-                }
-            }
-
-        }
         .exclded{
             li{
                 display: flex;
@@ -3493,5 +3532,35 @@ footer{
     img{
         height: 250px;
         object-fit: contain;
+    }
+}
+
+
+.dont_forget_points{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+    margin: 30px auto 0;
+    margin-right: 8px;
+    max-width: 1200px;
+    @media all and (min-width:992px){
+        grid-template-columns: repeat(3,1fr);
+        gap:10px 20px;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            background-image: url(./images/forgot-icon.svg);
+            width: 18px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline;
+            margin-right: 8px;
+        }
     }
 }
