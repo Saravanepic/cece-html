@@ -1321,6 +1321,10 @@ header .navbar-toggler-mobile svg {
   height: 369px;
   min-height: auto;
 }
+.culture_tripper_wrapper .image_part.mh-lg-176 img {
+  height: 176px;
+  min-height: auto;
+}
 .culture_tripper_wrapper .image_part::after {
   content: "";
   background-image: url(./images/culture-graphic-2.png);

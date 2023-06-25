@@ -1394,7 +1394,12 @@ header{
                 height: 369px;
                 min-height: auto;
             }
-            
+        }
+        &.mh-lg-176{
+            img{
+                height: 176px;
+                min-height: auto;
+            }
         }
         &::after{
             content: "";
