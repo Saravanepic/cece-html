@@ -135,19 +135,32 @@
                 alt="First slide"
               />
               <div class="content_part text-white">
-                <h2
-                  class="font-40 lh-48 text-capitalize font-sm-24 lh-sm-30 csf-medium"
-                >
+                <h2 class="font-40 lh-48 font-sm-24 lh-sm-30 csf-medium">
                   Do more with travel earth
                 </h2>
                 <p class="font-18 lh-29 my-3 font-sm-14 lh-sm-24">
                   One site, 3,00,000+ experiences you’ll remember
                 </p>
-                <form action="" class="search_in_banner">
-                  <input
-                    type="text"
-                    placeholder="Discover the world, One search at a time..."
-                  />
+                <form action="" class="search_page_form">
+                  <div>
+                    <label for="place">Where to</label>
+                    <input
+                      type="text"
+                      id="place"
+                      placeholder="Search for a place or activity"
+                    />
+                  </div>
+                  <div>
+                    <label for="start">When</label>
+                    <input
+                      type="date"
+                      id="start"
+                      name="trip-start"
+                      value="2018-07-22"
+                      min="2018-01-01"
+                      max="2018-12-31"
+                    />
+                  </div>
                   <button></button>
                 </form>
               </div>
@@ -232,7 +245,7 @@
       </section>
 
       <!-- Top Destinations -->
-      <section class="experience-categories pb-sm-0 pt-sm-0">
+      <section class="experience-categories pb-80px pt-sm-0">
         <div class="container">
           <div class="text-center">
             <h5 class="color-191825 font-30 lh-36 mb-2 font-sm-18 lh-sm-22">
@@ -243,116 +256,285 @@
               It has roots in a piece of classical Latin <br />
               literature from 45 BC.
             </p>
-            <div class="experience_category_grid">
-              <div class="experience_category_grid_col">
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-1.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
+            <!--  -->
+            <div
+              id="topdestinationsIndicators"
+              class="carousel slide h-100 card-carousel"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#topdestinationsIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#topdestinationsIndicators"
+                  data-slide-to="1"
+                ></li>
+              </ol>
+              <div class="carousel-inner h-100 pb-3">
+                <div class="carousel-item h-100 active">
+                  <!--  -->
+                  <div class="experience_category_grid">
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-1.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Music</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-2.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Art</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-3.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Cooking</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-4.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Wellness</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-5.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Spotlight</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-6.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Virtual Tours</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold"
-                      >Music</span
-                    >
-                    <div class="tag tag-green">Exp</div>
+                  <!--  -->
+                </div>
+                <div class="carousel-item h-100">
+                  <!--  -->
+                  <div class="experience_category_grid">
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-1.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Music</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-2.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Art</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-3.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Cooking</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-4.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Wellness</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-5.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Spotlight</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="experience_category_grid_col">
+                      <a class="experience_category_card" href="">
+                        <div class="image_part w-100">
+                          <img
+                            src="./images/experience-6.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                        </div>
+                        <div
+                          class="content_part d-flex align-items-center justify-content-between"
+                        >
+                          <span class="color-FFFFFF font-20 lh-24 csf-bold"
+                            >Virtual Tours</span
+                          >
+                          <div class="tag tag-green">Exp</div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </a>
+                  <!--  -->
+                </div>
               </div>
-              <div class="experience_category_grid_col">
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-2.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold">Art</span>
-                    <div class="tag tag-green">Exp</div>
-                  </div>
+              <div class="carousel-arrows">
+                <a
+                  class="carousel-control-prev"
+                  href="#topdestinationsIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
                 </a>
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-3.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold"
-                      >Cooking</span
-                    >
-                    <div class="tag tag-green">Exp</div>
-                  </div>
-                </a>
-              </div>
-              <div class="experience_category_grid_col">
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-4.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold"
-                      >Wellness</span
-                    >
-                    <div class="tag tag-green">Exp</div>
-                  </div>
-                </a>
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-5.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold"
-                      >Spotlight</span
-                    >
-                    <div class="tag tag-green">Exp</div>
-                  </div>
-                </a>
-              </div>
-              <div class="experience_category_grid_col">
-                <a class="experience_category_card" href="">
-                  <div class="image_part w-100">
-                    <img
-                      src="./images/experience-6.png"
-                      alt=""
-                      class="img-fluid w-100"
-                    />
-                  </div>
-                  <div
-                    class="content_part d-flex align-items-center justify-content-between"
-                  >
-                    <span class="color-FFFFFF font-20 lh-24 csf-bold"
-                      >Virtual Tours</span
-                    >
-                    <div class="tag tag-green">Exp</div>
-                  </div>
+                <a
+                  class="carousel-control-next"
+                  href="#topdestinationsIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
                 </a>
               </div>
             </div>
+            <!--  -->
           </div>
         </div>
       </section>

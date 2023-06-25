@@ -1002,3 +1002,34 @@
         
     }
 }
+
+
+// Search page Form 
+.search_page_form{
+    input,label{
+        font-size: 13px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// card-carousel
+.card-carousel{
+    .carousel-arrows{
+        max-width: 120px;
+    }
+    .carousel-indicators li.active{
+        width: 10px;
+        height: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        min-width: 30px;
+        height: 30px;
+        
+    }
+    
+}
