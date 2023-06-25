@@ -762,24 +762,23 @@
     width: 5px;
     height: 8px;
   }
-}
-.search_page_form input, .search_page_form label {
-  font-size: 13px;
-}
-.search_page_form button {
-  width: 40px;
-  height: 40px;
-}
-
-.card-carousel .carousel-arrows {
-  max-width: 120px;
-}
-.card-carousel .carousel-indicators li.active {
-  width: 10px;
-  height: 10px;
-}
-.card-carousel .carousel-control-prev-icon,
+  .search_page_form input, .search_page_form label {
+    font-size: 13px;
+  }
+  .search_page_form button {
+    width: 40px;
+    height: 40px;
+  }
+  .card-carousel .carousel-arrows {
+    max-width: 120px;
+  }
+  .card-carousel .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+  }
+  .card-carousel .carousel-control-prev-icon,
 .card-carousel .carousel-control-next-icon {
-  min-width: 30px;
-  height: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=responsive.css.map */

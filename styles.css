@@ -2416,11 +2416,13 @@ footer a:hover {
 }
 
 .breadcrumb-type-normal {
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 0.5px solid rgba(34, 34, 34, 0.5019607843);
+  border-bottom: 0.5px solid rgba(34, 34, 34, 0.5019607843);
 }
 .breadcrumb-type-normal span {
   text-transform: uppercase;
@@ -2546,6 +2548,7 @@ footer a:hover {
   flex-direction: row;
   overflow-x: scroll;
   flex-wrap: nowrap;
+  margin: 0 0 40px;
 }
 .places_slider a {
   display: inline-flex;
@@ -2609,6 +2612,56 @@ footer a:hover {
 }
 .places_grid a:hover span {
   color: #F67E18;
+}
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+}
+.pagination li {
+  margin: 0 7px;
+}
+.pagination li.paginate-link {
+  transition: 0.5s ease;
+}
+.pagination li.paginate-link a {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(34, 34, 34);
+  background-color: rgb(239, 239, 239);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.pagination li.paginate-link a:hover {
+  background-color: #F67E18;
+  color: white;
+  text-decoration: none;
+}
+.pagination li.paginate-link.active a {
+  background-color: #F67E18;
+  color: white;
+}
+
+.helpful_block {
+  margin: 70px 0 0;
+  border-radius: 5px;
+  background: rgba(205, 166, 92, 0.2);
+  box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_results_filter button:focus {
+  box-shadow: none;
+}
+.search_results_filter .dropdown-menu.show {
+  left: -90px !important;
 }
 
 .search_results_block {
@@ -2892,6 +2945,10 @@ footer a:hover {
   position: sticky;
   top: 100px;
 }
+.prdct_inner_sidebar.no-sticky {
+  position: relative;
+  top: 0;
+}
 .prdct_inner_sidebar #accordion > .card > .card-header h5 a {
   color: #222222;
   font-size: 16px;
@@ -2953,6 +3010,97 @@ footer a:hover {
 }
 .prdct_inner_sidebar h5 > a[aria-expanded=true]:after {
   background-image: url(./images/dropdown-open.svg);
+}
+
+.travelling_block {
+  background: #F67E18;
+  padding: 20px 15px;
+  color: white;
+}
+.travelling_block label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #222222;
+  color: white;
+}
+.travelling_block input {
+  border-radius: 38px;
+  background: #FFF;
+  box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+  padding: 8px 15px;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  border: none;
+}
+.travelling_block input:focus {
+  box-shadow: none;
+}
+
+.other_options {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+  position: relative;
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.slider .range-slider {
+  width: auto;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.slider p {
+  color: #222222;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "CircularStdFont-Bold" !important;
+  padding: 0 0 12px 0;
+}
+.slider .range-slider .rangeValues {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.slider input[type=range] {
+  -webkit-appearance: none;
+  border: 1px solid white;
+  width: -webkit-fill-available;
+  position: absolute;
+  left: 0;
+}
+.slider input[type=range]::-webkit-slider-runnable-track {
+  width: -webkit-fill-available;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 3px;
+}
+.slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #FFF;
+  box-shadow: 0px 4px 11px 2px rgba(0, 0, 0, 0.15);
+  margin-top: -7px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.slider input[type=range]:focus {
+  outline: none;
+}
+.slider input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
 }
 
 .search_page_form {
@@ -3025,4 +3173,16 @@ footer a:hover {
 .search_page_form button:hover {
   width: 50px;
   height: 50px;
+}
+
+/* Show the checkmark when checked */
+.CheckboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.CheckboxContainer input {
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=styles.css.map */
