@@ -54,6 +54,12 @@ table {
     font-weight: 500;
 }
 @font-face {
+    font-family: "CircularStdFont-Medium-Italic";
+    src: url(./fonts/circular-std-font-family/CircularStd-MediumItalic.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 500;
+}
+@font-face {
     font-family: "CircularStdFont-Bold";
     src: url(./fonts/circular-std-font-family/CircularStd-Bold.ttf) format("truetype");
     font-display: swap;
@@ -82,6 +88,9 @@ table {
 }
 .csf-medium{
     font-family: "CircularStdFont-Medium"!important;
+}
+.csf-medium-italic{
+    font-family: "CircularStdFont-Medium-Italic"!important;
 }
 .csf-bold{
     font-family: "CircularStdFont-Bold"!important;
@@ -309,6 +318,10 @@ p{
     // margin: 40px 0!important;
 }
 
+// Custom Hieghts
+.mh-419{
+    min-height: 419px;
+}
 
 // Custom Widths
 .mw-280px{
@@ -316,6 +329,9 @@ p{
 }
 .mw-477px{
     max-width: 477px;
+}
+.mw-555px{
+    max-width: 555px;
 }
 .mw-584px{
     max-width: 584px;
@@ -788,6 +804,12 @@ header{
             left: 0;
             .content_part{
                 z-index: 2;
+            }
+        }
+        &.no-shadow{
+            &::after{
+                background: none;
+                box-shadow: none;
             }
         }
     }
@@ -1361,6 +1383,13 @@ header{
                 min-height: auto;
             }
         }
+        &.mh-lg-369{
+            img{
+                height: 369px;
+                min-height: auto;
+            }
+            
+        }
         &::after{
             content: "";
             background-image: url(./images/culture-graphic-2.png);
@@ -1760,6 +1789,9 @@ footer{
         }
         &.pb-0{
             padding-bottom: 0!important;
+        }
+        &.py-100{
+            padding: 80px 0!important;
         } 
     }
     .pb-80px {

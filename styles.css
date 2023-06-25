@@ -56,6 +56,12 @@ table {
   font-weight: 500;
 }
 @font-face {
+  font-family: "CircularStdFont-Medium-Italic";
+  src: url(./fonts/circular-std-font-family/CircularStd-MediumItalic.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
   font-family: "CircularStdFont-Bold";
   src: url(./fonts/circular-std-font-family/CircularStd-Bold.ttf) format("truetype");
   font-display: swap;
@@ -83,6 +89,10 @@ table {
 
 .csf-medium {
   font-family: "CircularStdFont-Medium" !important;
+}
+
+.csf-medium-italic {
+  font-family: "CircularStdFont-Medium-Italic" !important;
 }
 
 .csf-bold {
@@ -332,12 +342,20 @@ p {
   background: #faf7ef;
 }
 
+.mh-419 {
+  min-height: 419px;
+}
+
 .mw-280px {
   max-width: 280px;
 }
 
 .mw-477px {
   max-width: 477px;
+}
+
+.mw-555px {
+  max-width: 555px;
 }
 
 .mw-584px {
@@ -777,6 +795,10 @@ header .navbar-toggler-mobile svg {
 }
 .search_banner .carousel-item::after .content_part {
   z-index: 2;
+}
+.search_banner .carousel-item.no-shadow::after {
+  background: none;
+  box-shadow: none;
 }
 .search_banner .content_part {
   position: absolute;
@@ -1289,6 +1311,10 @@ header .navbar-toggler-mobile svg {
   height: 250px;
   min-height: auto;
 }
+.culture_tripper_wrapper .image_part.mh-lg-369 img {
+  height: 369px;
+  min-height: auto;
+}
 .culture_tripper_wrapper .image_part::after {
   content: "";
   background-image: url(./images/culture-graphic-2.png);
@@ -1640,6 +1666,9 @@ footer a:hover {
 }
 .section-normal-padding section.pb-0 {
   padding-bottom: 0 !important;
+}
+.section-normal-padding section.py-100 {
+  padding: 80px 0 !important;
 }
 .section-normal-padding .pb-80px {
   padding-bottom: 80px !important;
