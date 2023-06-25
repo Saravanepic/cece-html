@@ -1544,6 +1544,11 @@ header{
                             height: 267px;
                             object-position: bottom;
                         }
+                        &.h-220{
+                            min-height: 220px;
+                            height: 220px;
+                            object-position: bottom;
+                        }
                     
                     }
                 } 
@@ -3469,5 +3474,19 @@ footer{
     input{
         width: 16px;
         height: 16px;
+    }
+}
+
+
+.blog-destinations{
+    img{
+        height: 127px;
+        object-fit: cover;
+    }
+}
+.interest_block{
+    img{
+        height: 250px;
+        object-fit: contain;
     }
 }

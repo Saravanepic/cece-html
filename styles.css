@@ -1462,6 +1462,12 @@ header .navbar-toggler-mobile svg {
   -o-object-position: bottom;
      object-position: bottom;
 }
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart img.h-220 {
+  min-height: 220px;
+  height: 220px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 .latest-travelogues-categories .latest-travelogues-wrap .show_limit_two_cards {
   border-top: 0.5px solid rgba(0, 0, 0, 0.4);
   padding: 40px 0 0;
@@ -3238,4 +3244,16 @@ footer a:hover {
 .CheckboxContainer input {
   width: 16px;
   height: 16px;
+}
+
+.blog-destinations img {
+  height: 127px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.interest_block img {
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=styles.css.map */
