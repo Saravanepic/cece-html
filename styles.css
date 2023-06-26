@@ -336,6 +336,10 @@ p {
   margin-right: 8px;
 }
 
+.text-linethroguh {
+  text-decoration: line-through;
+}
+
 .bg-orange {
   background: rgba(246, 126, 24, 0.05);
 }
@@ -477,6 +481,49 @@ a {
 }
 .normal-card .content_part {
   padding: 12px;
+}
+.normal-card.similar-card {
+  border-radius: 10px;
+  width: 225px;
+  transition: 0.5s ease;
+  margin-right: 20px;
+}
+.normal-card.similar-card:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 14px 30px 0px rgba(0, 0, 0, 0.1), 0px 55px 55px 0px rgba(0, 0, 0, 0.09), 0px 124px 75px 0px rgba(0, 0, 0, 0.05), 0px 221px 89px 0px rgba(0, 0, 0, 0.01), 0px 346px 97px 0px rgba(0, 0, 0, 0) !important;
+  padding: 0 25px 25px;
+  width: 279px;
+}
+.normal-card.similar-card .image_part {
+  position: relative;
+  border-radius: 10px;
+}
+.normal-card.similar-card .image_part img:nth-child(1) {
+  height: 125px;
+  border-radius: 10px;
+}
+.normal-card.similar-card .image_part img:nth-child(2) {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.normal-card.similar-card .content_part {
+  padding: 15px 0;
+}
+.normal-card.similar-card .content_part .similar_points p {
+  padding: 18px 0;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.normal-card.similar-card .content_part .similar_points p:last-child {
+  padding-bottom: 0;
+}
+
+.similar_cards_row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  min-height: 495px;
 }
 
 @-webkit-keyframes run {
@@ -1773,6 +1820,9 @@ footer a:hover {
 }
 .section-normal-padding section.pb-0 {
   padding-bottom: 0 !important;
+}
+.section-normal-padding section.pt-0 {
+  padding-top: 0 !important;
 }
 .section-normal-padding section.py-100 {
   padding: 80px 0 !important;
