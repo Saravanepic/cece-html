@@ -417,6 +417,29 @@ a{
         background: transparent;
         box-shadow: none!important;
     }
+    &.full-width-card{
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 500px;
+        width: 500px;
+        margin-right: 15px;
+        min-width: 500px;
+        .image_part{
+            position: relative;
+            img{
+                border-radius: 0;
+                height: 280px;
+            }
+            .content_part_abs{
+                position: absolute;
+                top:20px;
+                left: 17px;
+                span{
+                    max-width: 50%;
+                }
+            }
+        }
+    }
     .image_part{
         position: relative;
         img{
@@ -1280,6 +1303,48 @@ header{
         gap: 20px;
         // max-height: 487px;
         height: 100%;
+        &.grid-cols-reverse{
+            .experience_category_grid_col{
+                @media all and (min-width:992px){
+                    &:nth-child(1){
+                        width: 20%;
+                    }
+                    &:nth-child(2){
+                        width:20%;
+                        .experience_category_card{
+                            &:nth-child(1){
+                                img{
+                                    height: 267px;
+                                }
+                            }
+                            &:nth-child(2){
+                                img{
+                                    height: 200px;  
+                                } 
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        width:24%;
+                        .experience_category_card{
+                            &:nth-child(1){
+                                img{
+                                    height: 200px;
+                                }
+                            }
+                            &:nth-child(2){
+                                img{
+                                    height: 267px;  
+                                } 
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        width:27%;
+                    }
+                }
+            }
+        }
     .experience_category_grid_col{
         // @media all and (min-width:1200px){
         //     min-height: 487px;
@@ -3582,4 +3647,12 @@ footer{
             margin-right: 8px;
         }
     }
+}
+
+
+.home-cards-slider-row{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    padding: 0 0 10px;
 }
