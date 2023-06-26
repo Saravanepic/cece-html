@@ -1,4 +1,7 @@
 @media all and (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+  }
   /* Mobile Fonts and line heights */
   .font-sm-10 {
     font-size: 10px;
@@ -874,8 +877,8 @@
   .product_content_wrap .product_content_block .additional li {
     width: 100%;
   }
-  .prdct_details_inner {
-    padding: 0 30px !important;
+  .prdct_details_inner > div, .prdct_details_inner > section {
+    margin: 0 20px !important;
   }
   .prdct_availability .content_part {
     padding: 20px;

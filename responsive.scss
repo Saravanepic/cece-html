@@ -36,6 +36,10 @@
     // .lh-73 {
     //     line-height: 30px;
     // }
+
+    body{
+        overflow-x: hidden!important;
+    }
     /* Mobile Fonts and line heights */
     .font-sm-10{
         font-size: 10px;
@@ -1152,7 +1156,10 @@
         }
     }
     .prdct_details_inner{
-        padding: 0 30px!important;
+        & > div,& > section{
+            margin: 0 20px!important;
+        }
+        
     }
     .prdct_availability{
         .content_part{
