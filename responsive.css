@@ -797,4 +797,47 @@
     min-width: 30px;
     height: 30px;
   }
+  .search_results_block {
+    padding: 30px 0;
+  }
+  .search_results_block .result_card .image_part {
+    height: 191px;
+    position: relative;
+    padding: 10px !important;
+  }
+  .search_results_block .result_card .image_part img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .search_results_block .result_card .content_part {
+    padding: 10px;
+  }
+  .search_results_block .result_card .price_part {
+    padding: 0 10px 10px;
+  }
+  .search_results_filter {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .search_results_filter .sort-msg {
+    padding: 0 !important;
+    margin: 5px 0 0 !important;
+    width: 50%;
+  }
+  .search_results_filter .sort-msg + .dropdown {
+    width: 50%;
+    text-align: right;
+  }
+  .places_slider {
+    margin: 0 0 20px;
+  }
+  .places_slider .slick-arrow.slick-next {
+    right: -15px !important;
+  }
+  .helpful_block {
+    margin: 40px 0 0;
+  }
 }/*# sourceMappingURL=responsive.css.map */

@@ -1557,6 +1557,9 @@ header .navbar-toggler-mobile svg {
   grid-template-columns: repeat(4, 1fr);
   gap: 75px 25px;
 }
+.popular-travelogues-categories .travel_card_grid.grid-gap-40-25 {
+  gap: 40px 25px;
+}
 .popular-travelogues-categories .travel_card_grid .travel_cardblock .travel_cardblock_img_part img {
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.25);
@@ -2627,6 +2630,7 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: 100% 5px;
   font-family: "CircularStdFont-Bold" !important;
+  text-align: left;
 }
 #faqaccordion .card .card-header button.collapsed {
   background-image: url(./images/dropdown-open.svg);
@@ -2686,22 +2690,17 @@ footer a:hover {
 }
 
 .places_slider {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  overflow-x: scroll;
-  flex-wrap: nowrap;
   margin: 0 0 40px;
 }
 .places_slider a {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: flex-start;
   border-radius: 5px;
   border: 1px solid rgba(34, 34, 34, 0.2);
   background: #FFF;
   box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
-  padding: 5px 17px;
+  padding: 4px 17px;
   transition: 0.5s ease;
   margin-right: 15px;
 }
@@ -2860,6 +2859,11 @@ footer a:hover {
 }
 .search_results_block .result_card:hover {
   box-shadow: 1px 1px 10px 0px rgba(224, 224, 224, 0.25);
+}
+.search_results_block .result_card .flex-in-mobile {
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
 }
 
 .prdct_availability {
@@ -3387,4 +3391,24 @@ footer a:hover {
 
 .home-cards-slider-row {
   width: 100%;
+}
+
+.slick-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  opacity: 1 !important;
+}
+.slick-arrow::before {
+  width: 40px !important;
+  height: 40px !important;
+}
+.slick-arrow.slick-next::before {
+  content: "";
+  background-image: url(./images/arrow-right-brown.svg);
+  opacity: 1;
+  min-width: 40px;
+  height: 40px;
+  background-size: contain;
+  display: block;
+  right: 0;
 }/*# sourceMappingURL=styles.css.map */

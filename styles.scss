@@ -1675,6 +1675,9 @@ header{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 75px 25px;
+        &.grid-gap-40-25{
+            gap: 40px 25px;
+        }
         .travel_cardblock{
             .travel_cardblock_img_part{
                 img{
@@ -2845,6 +2848,7 @@ footer{
                 background-repeat: no-repeat;
                 background-position: 100% 5px;
                 font-family: "CircularStdFont-Bold" !important;
+                text-align: left;
                 &.collapsed{
                     background-image: url(./images/dropdown-open.svg);
                 }
@@ -2907,21 +2911,21 @@ footer{
     }
 }
 .places_slider{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: row;
+    // overflow-x: scroll;
+    // flex-wrap: nowrap;
     margin: 0 0 40px;
     a{
-        display: inline-flex;
+        display: inline-flex!important;
         align-items: center;
         justify-content: flex-start;
         border-radius: 5px;
         border: 1px solid rgba(34, 34, 34, 0.20);
         background: #FFF;
         box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
-        padding: 5px 17px;
+        padding: 4px 17px;
         transition: 0.5s ease;
         margin-right: 15px;
         img{
@@ -3101,6 +3105,12 @@ footer{
         &:hover{
             box-shadow: 1px 1px 10px 0px rgba(224, 224, 224, 0.25);
         }
+        .flex-in-mobile{
+            flex-direction: column!important;
+            justify-content: flex-start!important;
+            align-items: flex-start!important;
+        }
+        
     }
    
 }
@@ -3656,4 +3666,29 @@ footer{
     // overflow: scroll;
     // display: flex;
     // padding: 0 0 10px;
+}
+
+
+
+// Slick Styles
+.slick-arrow{
+    width: 40px!important;
+    height: 40px!important;
+    opacity: 1!important;
+    &::before{
+        width: 40px!important;
+        height: 40px!important;
+    }
+    &.slick-next{
+        &::before{
+            content: "";
+            background-image: url(./images/arrow-right-brown.svg);
+            opacity: 1;
+            min-width: 40px;
+            height: 40px;
+            background-size: contain;
+            display: block;
+            right: 0;
+        }   
+    }
 }
