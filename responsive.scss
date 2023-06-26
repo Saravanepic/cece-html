@@ -1126,7 +1126,7 @@
         }
         .content_part{
             width: 100%;
-            margin-top: 50px;
+            margin-top: 30px;
         }
     }
     .prdct_details_inner{
@@ -1164,7 +1164,28 @@
                 margin-bottom: 10px;
             }
         }
+        .image_part{
+            .slider-single{
+                .image_slide {
+                    img{
+                        min-height: 312px;
+                    }
+                }
+            }
+            .slider-nav{
+                .slick-list{
+                    height: 312px!important;   
+                }
+                .image_slide{
+                    img{
+                        height: 55px;
+                    }
+                }
+            }
+        }
     }
+
+    
     
     
 }

@@ -858,7 +858,7 @@
   }
   .prdct_availability .content_part {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .prdct_details_inner {
     overflow: hidden;
@@ -883,5 +883,14 @@
   }
   .prdct_availability form.availbility input {
     margin-bottom: 10px;
+  }
+  .prdct_availability .image_part .slider-single .image_slide img {
+    min-height: 312px;
+  }
+  .prdct_availability .image_part .slider-nav .slick-list {
+    height: 312px !important;
+  }
+  .prdct_availability .image_part .slider-nav .image_slide img {
+    height: 55px;
   }
 }/*# sourceMappingURL=responsive.css.map */

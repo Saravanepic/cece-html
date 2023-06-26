@@ -3124,38 +3124,50 @@ footer{
     .image_part{
         width: 54%;
         // 
-        h3 {
-            background: #f0f0f0;
-            color: #3498db;
-            font-size: 2.25rem;
-            margin: .5rem;
-            padding: 2%;
-            position: relative;
-            text-align: center;
+        
+        .slider-nav{
+            height: 100%!important;
+            .slick-list{
+                height: 421px!important;
+            }
+            .image_slide img {
+                height: 85px;
+                width: 105px;
+                border-radius: 10px;
+                margin-bottom: 8px;
+            }
         }
-        
-        .slider-single h3 {
-            line-height: 10rem;
-        }
-        
-        .slider-nav h3::before {
-            content: "";
-            display: block;
-            padding-top: 75%;
-        }
-        
-        .slider-nav h3 span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .slider-nav .slick-slide { cursor: pointer; }
-        
-        .slick-slide.is-active h3 {
-            color: #c00;
-            background-color: #fff
+        .slider-single{
+            .image_slide img {
+                height: 85px;
+                border-radius: 10px;
+                min-height: 421px;
+                
+            }
+            .slick-arrow.slick-next{
+                right: 10px;
+            }
+            .slick-arrow,.slick-arrow::before{
+                content: "";
+                opacity: 1;
+                min-width: 40px;
+                height: 40px!important;
+                background-size: contain;
+                display: block;
+            }
+
+            .slick-arrow.slick-next::before{
+                background-image: url(./images/slick-arrow-right.svg);
+            }
+            .slick-arrow.slick-prev{
+                left: 10px;
+                z-index: 1;
+            }
+            .slick-arrow.slick-prev::before{
+                content: "";
+                background-image: url(./images/slick-arrow-left.svg);
+                
+            }
         }
         // 
     }
