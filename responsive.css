@@ -93,6 +93,9 @@
   .section-normal-padding section.pt-sm-0 {
     padding-top: 0 !important;
   }
+  .section-normal-padding section.py-100 {
+    padding: 40px 0 !important;
+  }
   .pb-sm-0 {
     padding-bottom: 0 !important;
   }
@@ -114,6 +117,12 @@
   .tag {
     font-size: 11px;
     line-height: 18px;
+  }
+  .js-fe {
+    justify-content: flex-end;
+  }
+  .mh-419 {
+    min-height: auto;
   }
   p br {
     display: none;
@@ -380,6 +389,13 @@
   .experience_category_grid .experience_category_grid_col .experience_category_card .content_part span {
     font-size: 14px;
     line-height: 17px;
+  }
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(4) .experience_category_card, .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) .experience_category_card {
+    width: 100%;
+  }
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(4) .experience_category_card img, .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) .experience_category_card img {
+    -o-object-position: center;
+       object-position: center;
   }
   .culture_tripper_wrapper {
     margin: 40px 0;

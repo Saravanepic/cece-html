@@ -1366,6 +1366,25 @@ header{
         
 
     }
+    &.with_limit_five_images{
+        .experience_category_grid_col{
+            @media all and (min-width:992px){
+                &:nth-child(3){
+                    width:20%;
+                    .experience_category_card:nth-child(1){
+                        margin-bottom: 0;
+                        img{
+                            height: 487px;
+                        }
+                    }
+                    .experience_category_card:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 

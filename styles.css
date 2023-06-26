@@ -1296,6 +1296,20 @@ header .navbar-toggler-mobile svg {
     height: 226px;
   }
 }
+@media all and (min-width: 992px) {
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) {
+    width: 20%;
+  }
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(1) img {
+    height: 487px;
+  }
+  .experience_category_grid.with_limit_five_images .experience_category_grid_col:nth-child(3) .experience_category_card:nth-child(2) {
+    display: none;
+  }
+}
 
 .culture_tripper_wrapper {
   background: #222224;
