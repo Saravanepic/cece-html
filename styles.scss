@@ -2252,6 +2252,11 @@ footer{
         background-size: contain;
         background-position: center;
     }
+    &.hc-mt-10{
+        &::after,&::before{
+            margin-top: 10px;
+        }
+    }
 }
 .trip-intro-banner{
     .info-items-block{
@@ -2452,6 +2457,10 @@ footer{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                &.disabled{
+                    background: rgba(246, 126, 24, 0.3);
+                    border:2px solid rgba(246, 126, 24, 0.3);
+                }
                 &:hover{
                     background: white;
                     color: #F67E18;
@@ -4142,5 +4151,69 @@ footer{
             }
             
         }
+    }
+}
+
+
+#radio-cards-container {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .radio-card {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 100%;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0 0 20px;
+        margin: 0 0 20px;
+    }
+    
+    .radio-card:hover {
+        border: 2px solid #016787;
+        cursor: pointer;
+    }
+    
+    .radio-card-check {
+        display: none;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    .radio-card-check i {
+        font-size: 1.6rem;
+        color: #016787;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .radio-card-icon img {
+        width: 80px;
+    }
+    
+    .radio-card-label {
+        margin-top: 1rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    .radio-card-label-description {
+        margin-top: 0.5rem;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .radio-card.selected {
+        border: 2px solid #016787;
+    }
+    
+    .radio-card.selected .radio-card-check {
+        display: inline-flex;
     }
 }

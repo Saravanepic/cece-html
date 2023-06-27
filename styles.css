@@ -2066,6 +2066,9 @@ footer a:hover {
   background-size: contain;
   background-position: center;
 }
+.heading-icons.hc-mt-10::after, .heading-icons.hc-mt-10::before {
+  margin-top: 10px;
+}
 
 .trip-intro-banner .info-items-block {
   margin: 20px 0 0;
@@ -2269,6 +2272,10 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.elite-trip-form .form_side form button.disabled {
+  background: rgba(246, 126, 24, 0.3);
+  border: 2px solid rgba(246, 126, 24, 0.3);
 }
 .elite-trip-form .form_side form button:hover {
   background: white;
@@ -3829,4 +3836,58 @@ footer a:hover {
 .add_banner .slick-dots li.slick-active button:before {
   opacity: 1;
   font-size: 15px;
+}
+
+#radio-cards-container {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#radio-cards-container .radio-card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+}
+#radio-cards-container .radio-card:hover {
+  border: 2px solid #016787;
+  cursor: pointer;
+}
+#radio-cards-container .radio-card-check {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+#radio-cards-container .radio-card-check i {
+  font-size: 1.6rem;
+  color: #016787;
+}
+#radio-cards-container .text-center {
+  text-align: center;
+}
+#radio-cards-container .radio-card-icon img {
+  width: 80px;
+}
+#radio-cards-container .radio-card-label {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#radio-cards-container .radio-card-label-description {
+  margin-top: 0.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+#radio-cards-container .radio-card.selected {
+  border: 2px solid #016787;
+}
+#radio-cards-container .radio-card.selected .radio-card-check {
+  display: inline-flex;
 }/*# sourceMappingURL=styles.css.map */

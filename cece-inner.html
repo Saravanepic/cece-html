@@ -517,7 +517,7 @@
             </div>
           </div>
           <h2
-            class="heading-icons color-222222 font-20 lh-24 py-3 font-sm-18 lh-sm-22 csf-normal heading-icons"
+            class="heading-icons color-222222 font-30 lh-36 py-3 font-sm-16 lh-sm-20 csf-normal hc-mt-10 d-flex"
           >
             <span class="mw-397px"
               >Create Detailed Mandalas for a Calm State of Mind!</span
@@ -569,12 +569,107 @@
           </div>
         </div>
         <div class="form_side">
+          <div class="text-center mb-md-3 pb-md-2 md-2 pb-2">
+            <div class="font-18 lh-24 mb-1 font-sm-14 lh-sm-18">
+              Show Details
+            </div>
+            <div class="font-14 lh-19 mb-1 font-sm-12 lh-sm-16">
+              Select the slot below to book
+            </div>
+          </div>
           <form action="">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email address" />
-            <input type="number" placeholder="Phone" />
-            <div class="notes">Trip Starts from $ 8,00,000/- for a couple</div>
-            <button>Start Crafting Your Perfect Trip</button>
+            <!--  -->
+            <div id="radio-cards-container">
+              <!-- Radio Card 1 -->
+              <div
+                class="radio-card radio-card-1"
+                onclick="selectRadioCard('1')"
+              >
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="radio-card-check">
+                  <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                  <div class="radio-card-icon">
+                    <img src="./images/icon-react.png" alt="React" />
+                  </div>
+                  <div class="radio-card-label">React</div>
+                  <div class="radio-card-label-description">
+                    Build an application using React.
+                  </div>
+                </div>
+              </div>
+              <!-- Radio Card 2 -->
+              <div
+                class="radio-card radio-card-2"
+                onclick="selectRadioCard('2')"
+              >
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="radio-card-check">
+                  <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                  <div class="radio-card-icon">
+                    <img src="./images/icon-angular.png" alt="Angular" />
+                  </div>
+                  <div class="radio-card-label">Angular</div>
+                  <div class="radio-card-label-description">
+                    Build an application using Angular.
+                  </div>
+                </div>
+              </div>
+              <!-- Radio Card 3 -->
+              <div
+                class="radio-card radio-card-3"
+                onclick="selectRadioCard('3')"
+              >
+                <!-- Radio Card Check (tick) icon. By default, its hidden. Will be displayed when card gets clicked. -->
+                <div class="radio-card-check">
+                  <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <!-- Section to display the icon, label, and some additional text -->
+                <div class="text-center">
+                  <div class="radio-card-icon">
+                    <img src="./images/icon-vue.png" alt="Vue" />
+                  </div>
+                  <div class="radio-card-label">Vue</div>
+                  <div class="radio-card-label-description">
+                    Build an application using Vue.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+            <script>
+              const selectRadioCard = (cardNo) => {
+                /**
+                 * Loop through all radio cards, and remove the class "selected" from those elements.
+                 */
+                const allRadioCards = document.querySelectorAll(".radio-card");
+                allRadioCards.forEach((element, index) => {
+                  element.classList.remove(["selected"]);
+                });
+                /**
+                 * Add the class "selected" to the card which user has clicked on.
+                 */
+                const selectedCard = document.querySelector(
+                  ".radio-card-" + cardNo
+                );
+                selectedCard.classList.add(["selected"]);
+              };
+            </script>
+            <button class="disabled">Book Now</button>
+            <p
+              class="font-143 lh-22 color-222222 text-center mb-0 mt-md-3 mt-2 font-sm-12 lh-sm-22"
+            >
+              Slot Not Available to your liking?
+              <a class="link-normal cursor-pointer" href="!#"
+                >Request Availability</a
+              >
+            </p>
           </form>
         </div>
       </div>
