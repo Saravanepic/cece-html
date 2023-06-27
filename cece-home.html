@@ -208,14 +208,8 @@
       </section>
 
       <!--  -->
-      <section class="home-cards-slider">
+      <section class="home-cards-slider pb-sm-0">
         <div class="container">
-          <!-- <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
-          </div> -->
-
           <div class="home-cards-slider-row">
             <div class="full-width-card normal-card bg-transparent">
               <div class="image_part">
@@ -290,7 +284,7 @@
       <!-- How Cece Works -->
       <section class="">
         <div class="container">
-          <div class="text-center mb-lg-5 mb-4 pb-lg-0 pb-2">
+          <div class="text-center mb-lg-5 mb-3 pb-lg-0 pb-2">
             <h5 class="color-191825 font-30 lh-36 mb-2 font-sm-18 lh-sm-22">
               How Cece Works
             </h5>
@@ -299,7 +293,7 @@
               Sessions!
             </p>
           </div>
-          <div class="row epic_journey_row">
+          <div class="row epic_journey_row d-none d-md-flex">
             <div
               class="col-12 col-md-3 text-center color-222222 epic_journey_col mb-md-0 mb-4 pb-md-0 pb-2"
             >
@@ -348,6 +342,96 @@
                 Pick an experience that excites you. Contact your host for any
                 additional queries!
               </p>
+            </div>
+          </div>
+          <div class="works_tabs d-block d-md-none">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-item nav-link active"
+                  id="nav-browse-tab"
+                  data-toggle="tab"
+                  href="#nav-browse"
+                  role="tab"
+                  aria-controls="nav-browse"
+                  aria-selected="true"
+                  >1. Browse</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-pickdate-tab"
+                  data-toggle="tab"
+                  href="#nav-pickdate"
+                  role="tab"
+                  aria-controls="nav-pickdate"
+                  aria-selected="false"
+                  >2. Pick Date</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="nav-book-tab"
+                  data-toggle="tab"
+                  href="#nav-book"
+                  role="tab"
+                  aria-controls="nav-book"
+                  aria-selected="false"
+                  >3. Book</a
+                >
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-browse"
+                role="tabpanel"
+                aria-labelledby="nav-browse-tab"
+              >
+                <div class="text-center color-222222 epic_journey_col">
+                  <img src="./images/ej-1.png" alt="" class="img-fluid mb-2" />
+                  <div class="font-16 lh-26 mb-md-1 mb-2 font-sm-14 lh-sm-22">
+                    Browse through our categories
+                  </div>
+                  <p class="font-14 lh-22 font-sm-10 lh-sm-16 mw-477px m-auto">
+                    Pick an experience that excites you. Contact your host for
+                    any additional queries!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-pickdate"
+                role="tabpanel"
+                aria-labelledby="nav-pickdate-tab"
+              >
+                <div class="text-center color-222222 epic_journey_col">
+                  <img src="./images/ej-1.png" alt="" class="img-fluid mb-2" />
+                  <div class="font-16 lh-26 mb-md-1 mb-2 font-sm-14 lh-sm-22">
+                    Pick a Date and Time
+                  </div>
+                  <p class="font-14 lh-22 font-sm-10 lh-sm-16 mw-477px m-auto">
+                    Choose your preferred dates and time slot! You can request
+                    the host for availability if there are no upcoming slots!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-book"
+                role="tabpanel"
+                aria-labelledby="nav-book-tab"
+              >
+                <div class="text-center color-222222 epic_journey_col">
+                  <img src="./images/ej-1.png" alt="" class="img-fluid mb-2" />
+                  <div class="font-16 lh-26 mb-md-1 mb-2 font-sm-14 lh-sm-22">
+                    Book Your Experience
+                  </div>
+                  <p class="font-14 lh-22 font-sm-10 lh-sm-16 mw-477px m-auto">
+                    Invite your friends and family to watch with you. The Zoom
+                    link to join the experience will open on multiple devices.
+                    Enjoy together!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1618,19 +1702,21 @@
           centerMode: true,
           centerPadding: "50px",
           focusOnSelect: true,
-          dots: true,
+          dots: false,
           arrows: true,
-          // speed: 300,
-          autoplay: true,
-          autoplaySpeed: 2000,
+          speed: 300,
+          cssEase: "linear",
+          autoplay: false,
+          // autoplaySpeed: 2000,
           responsive: [
             {
               breakpoint: 768,
               settings: {
                 slidesToShow: 1,
-                autoplay: false,
                 centerPadding: "10px",
                 arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
               },
             },
           ],
@@ -1645,7 +1731,7 @@
           arrows: true,
           // speed: 300,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 5000,
           responsive: [
             {
               breakpoint: 768,

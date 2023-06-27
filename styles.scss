@@ -3825,3 +3825,119 @@ footer{
         }   
     }
 }
+
+
+.works_tabs{
+    .epic_journey_col{
+        img{
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        .mw-477px{
+            max-width: 283px;
+        }
+    }
+    .nav-tabs{
+        border: none;
+        justify-content: space-between;
+        .nav-link{
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.5);
+            padding: 12px 13px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            &.active{
+                color: rgba(246, 126, 24, 1);
+                border: 1px solid rgba(246, 126, 24, 1);
+            }
+        }
+    }
+    .tab-content{
+        padding-top: 20px;
+    }
+}
+
+
+
+.home-cards-slider-row{
+    padding-bottom: 0!important;
+    @media all and (min-width:992px){
+        padding-top: 80px!important;
+        padding-bottom: 40px!important;
+    }
+    .slick-arrow.slick-next{
+        right: 10px;
+        top: 35px;
+    }
+    .slick-arrow,.slick-arrow::before{
+        content: "";
+        opacity: 1;
+        min-width: 40px;
+        height: 40px!important;
+        background-size: contain;
+        display: block;
+    }
+
+    .slick-arrow.slick-next::before{
+        background-image: url(./images/exp-right-arrow.png);
+    }
+    .slick-arrow.slick-prev{
+        left: 10px;
+        top: 35px;
+        left: calc(100% - 110px);
+        z-index: 1;
+    }
+    .slick-arrow.slick-prev::before{
+        content: "";
+        background-image: url(./images/exp-left-arrow.png);
+        
+    }
+}
+
+.members_slider{
+    .slick-arrow.slick-next{
+        right: 10px;
+        top: -40px;
+    
+    }
+    .slick-arrow,.slick-arrow::before{
+        content: "";
+        opacity: 1;
+        min-width: 40px;
+        height: 40px!important;
+        background-size: contain;
+        display: block;
+    }
+
+    .slick-arrow.slick-next::before{
+        background-image: url(./images/arrow-right-brown.svg);
+    }
+    .slick-arrow.slick-prev{
+        left: 10px;
+        top: -40px;
+        left: calc(100% - 110px);
+        z-index: 1;
+    }
+    .slick-arrow.slick-prev::before{
+        content: "";
+        background-image: url(./images/arrow-left-brown.svg);
+
+    } 
+    .slick-dots{
+        bottom: -60px;
+        li{
+            button:before{
+            
+            }
+            &.slick-active{
+                button:before{
+                    opacity: 1;
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+}
