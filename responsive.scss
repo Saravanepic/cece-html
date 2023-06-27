@@ -1219,7 +1219,42 @@
         }
     }
 
-    
+    .engage_and_learn{
+        .why_pick_elite{
+            gap: 20px;
+        }
+    }
+    .about_host{
+        flex-direction: column-reverse;
+    }
+    .option_selector_wrap{
+        margin: 25px 0 0;
+        .option_selector{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5px 0;
+            p{  
+                min-width:28px;
+                font-size: 12px;
+                line-height: 20px;
+                margin-right: 17px;
+            }
+            span{
+                width: 91px;
+                min-width: 91px;
+                font-size: 12px;
+                line-height: 20px;
+                margin: 0 5px!important;
+                display: inline;
+                
+                color: rgba(34, 34, 34, 0.8);
+                padding: 8px 4px;
+            }
+        }
+    }
     
     
 }
