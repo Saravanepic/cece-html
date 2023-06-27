@@ -951,4 +951,72 @@
     color: rgba(34, 34, 34, 0.8);
     padding: 8px 4px;
   }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout {
+    flex-direction: column;
+    margin-top: 0 !important;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .show_limit_two_cards {
+    margin: 20px 0 0;
+    padding: 0;
+    border: none;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .show_limit_two_cards > div:first-child {
+    flex-direction: column;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .show_limit_two_cards > div:last-child {
+    display: none !important;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .latest-travelogues-card .latest-travelogues-contentpart {
+    padding-top: 20px;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .latest-travelogues-card .latest-travelogues-contentpart > div {
+    margin-bottom: 10px !important;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .latest-travelogues-card .latest-travelogues-imagepart {
+    margin: 0;
+    width: 100%;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:first-child .latest-travelogues-card .latest-travelogues-imagepart img {
+    height: 146px !important;
+    min-height: 146px !important;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:last-child .latest-travelogues-card-col {
+    display: none !important;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.has-differentmobile-layout > div:last-child .show_limit_two_cards {
+    padding: 20px 0 0 !important;
+    margin: 20px 0 0 !important;
+  }
+  .latest-travelogues-categories .latest-travelogues-wrap.travel-mt-sm-0 {
+    margin-top: 0 !important;
+  }
+  .blog-destinations .country_box {
+    margin: 0 0 20px;
+  }
+  .blog-destinations img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .travel-trip-fc {
+    flex-direction: column;
+  }
+  .add_banner .slick-list {
+    margin-left: -55px;
+    height: 60px;
+  }
+  .add_banner .add_slide {
+    position: relative;
+    width: 320px !important;
+    display: inline !important;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .add_banner .add_slide img {
+    display: inline !important;
+    width: 320px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=responsive.css.map */

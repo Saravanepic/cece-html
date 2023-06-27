@@ -1719,6 +1719,33 @@ header{
                 .latest-travelogues-imagepart{
                     margin-right: 0;
                     margin-bottom: 18px;
+                    &.play-icon{
+                        position: relative;
+                        border-radius: 10px!important;
+                        overflow: hidden;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+                        &::before{
+                            content: "";
+                            background-image: url(./images/play.svg);
+                            width: 20px;
+                            height: 17px;
+                            position: absolute;
+                            opacity: 1;
+                            left: 12px;
+                            bottom: 15px;
+                            transition: 0.5s ease;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                        }
+                        &:hover{
+                            &::before{
+                                width: 30px;
+                                height: 25px;
+                            }
+                        }
+                    }
                     img{
                         border-radius: 3px;
                         min-height: 375px;
@@ -2015,6 +2042,9 @@ footer{
         &.py-100{
             padding: 80px 0!important;
         } 
+        &.add_banner_wrap{
+            padding: 60px 0 40px!important;
+        }
     }
     .pb-80px {
         padding-bottom: 80px !important;
@@ -3801,8 +3831,10 @@ footer{
 }
 .interest_block{
     img{
-        height: 250px;
-        object-fit: contain;
+        // height: 250px;
+        height: 210px;
+        object-fit: cover;
+        width: 197px;
     }
 }
 
@@ -4050,6 +4082,65 @@ footer{
                 background: #F67E18;
                 color: white;
             }
+        }
+    }
+}
+
+
+.country_box{
+    img{
+        animation: rotate 30s infinite;
+    }
+}
+@keyframes rotate {
+    from {transform:rotate(0)}
+    to {transform:rotate(360deg)}
+  }
+
+
+
+//   add_banner
+.add_banner{
+    .slick-list{
+        margin-left: -60px;
+    }
+    .add_slide{
+        position: relative;
+        width: 728px!important;
+        display: inline!important;
+        margin: 0 20px;
+        cursor: pointer;
+        img{
+            display: inline!important;
+            width: 728px;
+            height: 90px;
+            object-fit: cover;
+            // box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 20px 44px 0px rgba(0, 0, 0, 0.10), 0px 80px 80px 0px rgba(0, 0, 0, 0.09), 0px 180px 108px 0px rgba(0, 0, 0, 0.05), 0px 320px 128px 0px rgba(0, 0, 0, 0.01), 0px 501px 140px 0px rgba(0, 0, 0, 0.00);
+            border-radius: 5px;
+        }
+        &::after{
+            content: "Ads";
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 18px;
+            line-height: 29px;
+            color: white;
+        }
+    }
+    .slick-dots{
+        bottom: -40px;
+        li{
+            button:before{
+            
+            }
+            &.slick-active{
+                button:before{
+                    opacity: 1;
+                    font-size: 15px;
+                }
+            }
+            
         }
     }
 }

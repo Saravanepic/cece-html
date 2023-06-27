@@ -1256,8 +1256,95 @@
         }
     }
     
+    // Mobile Traveloug Layouts
+    .latest-travelogues-categories {
+        .latest-travelogues-wrap{
+            &.has-differentmobile-layout{
+                flex-direction: column;
+                margin-top: 0!important;
+                & > div:first-child{
+                    .show_limit_two_cards{
+                        margin: 20px 0 0;
+                        padding: 0;
+                        border: none;
+                        & > div:first-child{
+                            flex-direction: column;
+                        }
+                        & > div:last-child{
+                            display: none!important;
+                        }
+                    }
+                    .latest-travelogues-card{
+                        .latest-travelogues-contentpart{
+                            padding-top: 20px;
+                            & > div{
+                                margin-bottom: 10px!important;
+                            }
+                        }
+                        .latest-travelogues-imagepart{
+                            margin: 0;
+                            width: 100%;
+                            img{
+                                height: 146px!important;
+                                min-height: 146px!important;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                & > div:last-child{
+                    .latest-travelogues-card-col{
+                        display: none!important;
+                    }
+                    .show_limit_two_cards{
+                        padding: 20px 0 0!important;
+                        margin: 20px 0 0!important;
+                    }
+                }
+            }
+            &.travel-mt-sm-0{
+                margin-top: 0!important;
+            }
+        }
+    }
+    .blog-destinations{
+        .country_box{
+            margin: 0 0 20px;
+        }
+        img{
+            max-width: 80px;
+            max-height: 80px;
+        }
+    }
+
+    .travel-trip-fc{
+        flex-direction: column;
+    }
+    .add_banner{
+        .slick-list{
+            margin-left: -55px;
+            height: 60px;
+        }
+        .add_slide{
+            position: relative;
+            width: 320px!important;
+            display: inline!important;
+            margin: 0 20px;
+            cursor: pointer;
+            img{
+                display: inline!important;
+                width: 320px;
+                height: 50px;
+              
+            }
+          
+        }
+        
+    }
     
 }
+
 
 
 

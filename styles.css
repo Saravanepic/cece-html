@@ -1599,6 +1599,31 @@ header .navbar-toggler-mobile svg {
   margin-right: 0;
   margin-bottom: 18px;
 }
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart.play-icon {
+  position: relative;
+  border-radius: 10px !important;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart.play-icon::before {
+  content: "";
+  background-image: url(./images/play.svg);
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  opacity: 1;
+  left: 12px;
+  bottom: 15px;
+  transition: 0.5s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart.play-icon:hover::before {
+  width: 30px;
+  height: 25px;
+}
 .latest-travelogues-categories .latest-travelogues-wrap .latest-travelogues-card.latest-travelogues-card-col .latest-travelogues-imagepart img {
   border-radius: 3px;
   min-height: 375px;
@@ -1861,6 +1886,9 @@ footer a:hover {
 }
 .section-normal-padding section.py-100 {
   padding: 80px 0 !important;
+}
+.section-normal-padding section.add_banner_wrap {
+  padding: 60px 0 40px !important;
 }
 .section-normal-padding .pb-80px {
   padding-bottom: 80px !important;
@@ -3517,9 +3545,10 @@ footer a:hover {
 }
 
 .interest_block img {
-  height: 250px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 197px;
 }
 
 .dont_forget_points {
@@ -3743,4 +3772,61 @@ footer a:hover {
 .option_selector_wrap .option_selector span:hover, .option_selector_wrap .option_selector span.active {
   background: #F67E18;
   color: white;
+}
+
+.country_box img {
+  -webkit-animation: rotate 30s infinite;
+          animation: rotate 30s infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.add_banner .slick-list {
+  margin-left: -60px;
+}
+.add_banner .add_slide {
+  position: relative;
+  width: 728px !important;
+  display: inline !important;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.add_banner .add_slide img {
+  display: inline !important;
+  width: 728px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.add_banner .add_slide::after {
+  content: "Ads";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  line-height: 29px;
+  color: white;
+}
+.add_banner .slick-dots {
+  bottom: -40px;
+}
+.add_banner .slick-dots li.slick-active button:before {
+  opacity: 1;
+  font-size: 15px;
 }/*# sourceMappingURL=styles.css.map */
