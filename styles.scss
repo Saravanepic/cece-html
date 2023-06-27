@@ -4176,6 +4176,18 @@ footer{
         }
         &.selected {
             border: 2px solid #F67E18;
+            .radio-flex{
+                &:nth-child(1){
+                    & > div:nth-child(1){
+                        &::before{
+                            content: "";
+                            background-color: #F67E18;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                          
+                        }
+                    }
+                }
+            }
         }
         &:last-child{
             margin-bottom: 0;
@@ -4186,6 +4198,22 @@ footer{
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        &:nth-child(1){
+            & > div:nth-child(1){
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-start;
+                &::before{
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid rgba(0, 0, 0, 0.8);
+                    border-radius: 50%;
+                    margin-right: 6px;
+                    display: inline-block;
+                }
+            }
+        }
     }
     .radio-card-check {
         display: none;

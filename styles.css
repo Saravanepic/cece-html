@@ -3861,6 +3861,11 @@ footer a:hover {
 #radio-cards-container .radio-card.selected {
   border: 2px solid #F67E18;
 }
+#radio-cards-container .radio-card.selected .radio-flex:nth-child(1) > div:nth-child(1)::before {
+  content: "";
+  background-color: #F67E18;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 #radio-cards-container .radio-card:last-child {
   margin-bottom: 0;
 }
@@ -3869,6 +3874,20 @@ footer a:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+#radio-cards-container .radio-flex:nth-child(1) > div:nth-child(1) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#radio-cards-container .radio-flex:nth-child(1) > div:nth-child(1)::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  margin-right: 6px;
+  display: inline-block;
 }
 #radio-cards-container .radio-card-check {
   display: none;
