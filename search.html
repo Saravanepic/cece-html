@@ -152,14 +152,7 @@
                   </div>
                   <div>
                     <label for="start">When</label>
-                    <input
-                      type="date"
-                      id="start"
-                      name="trip-start"
-                      value="2018-07-22"
-                      min="2018-01-01"
-                      max="2018-12-31"
-                    />
+                    <input type="date" value="2018-07-22" id="datepicker" />
                   </div>
                   <button></button>
                 </form>
@@ -736,6 +729,10 @@
     </footer>
 
     <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+
       window.onscroll = function () {
         myFunction();
       };

@@ -634,6 +634,14 @@
     font-size: 11px;
     line-height: 18px;
   }
+  .trip-intro-banner .info-items-block.info-items-block-mobile .d-flex {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    gap: 20px 0;
+  }
+  .trip-intro-banner .info-items-block.info-items-block-mobile .d-flex .info-item {
+    width: 33%;
+  }
   .trip-inner-page .inner-breadcrumb {
     flex-wrap: wrap;
   }
@@ -718,8 +726,15 @@
     margin: auto;
     flex-direction: column;
   }
+  .elite-trip-form.has_cece_form .content_side .info-items-block .info-item {
+    padding: 0 10px;
+  }
+  .elite-trip-form.has_cece_form #radio-cards-container .radio-card {
+    padding: 10px;
+    margin: 0 0 10px;
+  }
   .elite-trip-form .content_side {
-    width: 100%;
+    width: 100% !important;
   }
   .elite-trip-form .content_side .info-items-block .info-item {
     padding: 0 20px;
@@ -733,12 +748,12 @@
     line-height: 18px;
   }
   .elite-trip-form .form_side {
-    width: 100%;
+    width: 100% !important;
     margin: 100px 0 0;
   }
   .elite-trip-form .form_side::before {
     top: -200px;
-    left: 50%;
+    left: 50% !important;
     transform: rotate(90deg) translate(0, 5%);
   }
   .elite-trip-form .form_side form input, .elite-trip-form .form_side form button, .elite-trip-form .form_side form .notes {
@@ -1018,5 +1033,33 @@
     display: inline !important;
     width: 320px;
     height: 50px;
+  }
+  .info-header-points {
+    position: relative;
+  }
+  .info-header-points .info-item {
+    width: 45%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .info-header-points::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid rgb(34, 34, 34);
+    width: 0.1px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    z-index: 9;
+    top: 0;
+    background: rgb(34, 34, 34);
+  }
+  .w-100-mobile {
+    width: 100%;
+  }
+  .flex-in-mobile {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
   }
 }/*# sourceMappingURL=responsive.css.map */

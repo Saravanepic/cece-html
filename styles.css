@@ -427,6 +427,31 @@ p {
   text-transform: capitalize;
 }
 
+.link-white-arrow {
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-white-arrow:hover {
+  text-decoration: none;
+  color: white;
+}
+.link-white-arrow:hover::after {
+  content: "";
+  margin-left: 6px;
+}
+.link-white-arrow::after {
+  content: "";
+  background-image: url(./images/link-white-arrow.svg);
+  width: 22px;
+  height: 16px;
+  background-size: contain;
+  background-position: center;
+  margin-left: 4px;
+  transition: 0.5s ease;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -2066,8 +2091,10 @@ footer a:hover {
   background-size: contain;
   background-position: center;
 }
-.heading-icons.hc-mt-10::after, .heading-icons.hc-mt-10::before {
-  margin-top: 10px;
+@media all and (min-width992px) {
+  .heading-icons.hc-mt-10::after, .heading-icons.hc-mt-10::before {
+    margin-top: 10px;
+  }
 }
 
 .trip-intro-banner .info-items-block {
@@ -3019,11 +3046,6 @@ footer a:hover {
 .search_results_block .result_card:hover {
   box-shadow: 1px 1px 10px 0px rgba(224, 224, 224, 0.25);
 }
-.search_results_block .result_card .flex-in-mobile {
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-}
 
 .prdct_availability {
   display: flex;
@@ -3901,4 +3923,44 @@ footer a:hover {
 }
 #radio-cards-container .radio-card.selected .radio-card-check {
   display: inline-flex;
+}
+
+.content_part_editor ul {
+  list-style: disc;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+.content_part_editor ul li {
+  margin-bottom: 20px;
+}
+.content_part_editor ul li:last-child {
+  margin-bottom: 0;
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 2s ease;
+}
+
+.socail_share a {
+  margin: 0 4px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.socail_share a svg {
+  transition: 0.5s ease;
+}
+.socail_share a:hover svg path {
+  fill: #F67E18;
+}
+
+.image_animate {
+  height: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.image_animate img {
+  transition: 0.5s ease;
+}
+.image_animate:hover img:first-child {
+  transform: scale(1.1);
 }/*# sourceMappingURL=styles.css.map */

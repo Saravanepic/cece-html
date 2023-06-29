@@ -853,6 +853,16 @@
                     }
                 }
             }
+            &.info-items-block-mobile{
+                .d-flex{
+                    flex-wrap: wrap;
+                    justify-content: flex-start!important;
+                    gap:20px 0;
+                    .info-item{
+                        width: 33%;
+                    }
+                }
+            }
         }
     }
     .trip-inner-page{
@@ -956,8 +966,19 @@
         width: 95%;
         margin: auto;
         flex-direction: column;
+        &.has_cece_form{
+            .content_side .info-items-block .info-item{
+                padding: 0 10px;
+            }
+            #radio-cards-container{
+                .radio-card{
+                    padding: 10px;
+                    margin: 0 0 10px;
+                }
+            }
+        }
         .content_side{
-            width: 100%;
+            width: 100%!important;
             .info-items-block{
                 .info-item{
                     padding: 0 20px;
@@ -975,11 +996,11 @@
             }
         }
         .form_side{
-            width: 100%;
+            width: 100%!important;
             margin: 100px 0 0;
             &::before{
                 top: -200px;
-                left: 50%;
+                left: 50%!important;
                 transform: rotate(90deg) translate(0, 5%);
             }
             form{
@@ -1342,9 +1363,36 @@
         }
         
     }
+    .info-header-points{
+        position: relative;
+        .info-item{
+            width: 45%;
+            justify-content: space-between;
+            text-align: center;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            border-top: 1px solid rgba(34, 34, 34, 1);
+            width: 0.1px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 70px;
+            z-index: 9;
+            top: 0;
+            background: rgba(34, 34, 34, 1);
+    
+        }
+    }
+    .w-100-mobile{
+        width: 100%;
+    }
+    .flex-in-mobile{
+        flex-direction: column!important;
+        justify-content: flex-start!important;
+        align-items: flex-start!important;
+    }
     
 }
-
-
 
 

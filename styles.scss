@@ -405,6 +405,31 @@ p{
     text-transform: capitalize;
 }
 
+.link-white-arrow{
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        text-decoration: none;
+        color: white;
+        &::after{
+            content: "";
+            margin-left: 6px;
+        }
+    }
+    &::after{
+        content: "";
+        background-image: url(./images/link-white-arrow.svg);
+        width: 22px;
+        height: 16px;
+        background-size: contain;
+        background-position: center;
+        margin-left: 4px;
+        transition: 0.5s ease;
+    }
+}
+
 
 // Reset Container
 .container{
@@ -2253,9 +2278,12 @@ footer{
         background-position: center;
     }
     &.hc-mt-10{
-        &::after,&::before{
-            margin-top: 10px;
+        @media all and (min-width992px){
+            &::after,&::before{
+                margin-top: 10px;
+            }
         }
+        
     }
 }
 .trip-intro-banner{
@@ -3273,11 +3301,7 @@ footer{
         &:hover{
             box-shadow: 1px 1px 10px 0px rgba(224, 224, 224, 0.25);
         }
-        .flex-in-mobile{
-            flex-direction: column!important;
-            justify-content: flex-start!important;
-            align-items: flex-start!important;
-        }
+       
         
     }
    
@@ -4235,5 +4259,60 @@ footer{
     
     .radio-card.selected .radio-card-check {
         display: inline-flex;
+    }
+}
+
+
+.content_part_editor{
+    ul{
+        list-style: disc;
+        padding-inline-start: 20px;
+        li{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+.socail_share{
+    a{
+        margin: 0 4px;
+        text-decoration: none;
+        transition: 0.5s ease;
+        svg{
+            transition: 0.5s ease;
+        }
+        &:hover{
+            svg{
+                path{
+                    fill: #F67E18;
+                }
+            }
+
+        }
+    }
+}
+
+.image_animate{
+    height: 100%;
+    transition: 0.5s ease;
+    overflow: hidden;
+    img{
+        transition: 0.5s ease;
+    }
+    &:hover{
+        img{
+            &:first-child{
+                transform: scale(1.1);
+            }
+        }
     }
 }

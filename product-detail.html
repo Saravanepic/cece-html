@@ -304,7 +304,7 @@
                 Select Date and Travelers
               </h5>
               <form action="" class="availbility">
-                <input type="text" placeholder="Tuesday, June 20, 2023" />
+                <input type="date" value="2018-07-22" id="datepicker" />
                 <input type="text" placeholder="2 Adults" />
                 <button>Request Availability</button>
               </form>
@@ -1261,6 +1261,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script type="text/javascript">
+      $(function () {
+        $("#datepicker").datepicker();
+      });
       $(document).ready(function () {
         $(".slider-single").slick({
           slidesToShow: 1,
