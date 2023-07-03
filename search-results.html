@@ -544,6 +544,390 @@
                 </div>
               </div>
             </div>
+            <div class="filter_in_mobile">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="viewmore bg-transparent mt-3 w-100"
+                data-toggle="modal"
+                data-target="#filterModal"
+              >
+                Filter
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="filterModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="filterModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div
+                      class="modal-body p-0"
+                      style="max-height: 80vh; overflow: scroll"
+                    >
+                      <!-- No need to do thi again call the same sibe abr here -->
+                      <div class="prdct_inner_sidebar no-sticky">
+                        <div class="travelling_block">
+                          <div class="d-flex flex-column">
+                            <label for="start" class="pb-3"
+                              >When are you travelling?</label
+                            >
+                            <input
+                              type="date"
+                              id="start"
+                              name="trip-start"
+                              value="2018-07-22"
+                              min="2018-01-01"
+                              max="2018-12-31"
+                            />
+                          </div>
+                        </div>
+                        <div class="sticky_sidebar">
+                          <!-- Reference From https://codepen.io/glebkema/pen/QQOZRe -->
+                          <div id="accordion">
+                            <div class="card">
+                              <div class="card-header" id="heading-1">
+                                <h5 class="mb-0">
+                                  <a
+                                    role="button"
+                                    data-toggle="collapse"
+                                    href="#collapse-1"
+                                    aria-expanded="false"
+                                    aria-controls="collapse-1"
+                                  >
+                                    Item 1
+                                  </a>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse-1"
+                                class="collapse"
+                                data-parent="#accordion"
+                                aria-labelledby="heading-1"
+                              >
+                                <div class="card-body">
+                                  <div id="accordion-1">
+                                    <div class="card">
+                                      <div class="card-header" id="heading-1-1">
+                                        <h5 class="mb-0">
+                                          <a
+                                            class="collapsed"
+                                            role="button"
+                                            data-toggle="collapse"
+                                            href="#collapse-1-1"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-1-1"
+                                          >
+                                            Item 1 &gt; 1
+                                          </a>
+                                        </h5>
+                                      </div>
+                                      <div
+                                        id="collapse-1-1"
+                                        class="collapse"
+                                        data-parent="#accordion-1"
+                                        aria-labelledby="heading-1-1"
+                                      >
+                                        <div class="card-body">
+                                          <div id="accordion-1-1">
+                                            <div class="card">
+                                              <div
+                                                class="card-header"
+                                                id="heading-1-1-1"
+                                              >
+                                                <h5 class="mb-0">
+                                                  <a
+                                                    class="collapsed"
+                                                    role="button"
+                                                    data-toggle="collapse"
+                                                    href="#collapse-1-1-1"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-1-1-1"
+                                                  >
+                                                    Item 1 &gt; 1 &gt; 1
+                                                  </a>
+                                                </h5>
+                                              </div>
+                                              <div
+                                                id="collapse-1-1-1"
+                                                class="collapse"
+                                                data-parent="#accordion-1-1"
+                                                aria-labelledby="heading-1-1-1"
+                                              >
+                                                <div class="card-body">
+                                                  Text 1 &gt; 1 &gt; 1
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <div
+                                                class="card-header"
+                                                id="heading-1-1-2"
+                                              >
+                                                <h5 class="mb-0">
+                                                  <a
+                                                    class="collapsed"
+                                                    role="button"
+                                                    data-toggle="collapse"
+                                                    href="#collapse-1-1-2"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-1-1-2"
+                                                  >
+                                                    Item 1 &gt; 1 &gt; 2
+                                                  </a>
+                                                </h5>
+                                              </div>
+                                              <div
+                                                id="collapse-1-1-2"
+                                                class="collapse"
+                                                data-parent="#accordion-1-1"
+                                                aria-labelledby="heading-1-1-2"
+                                              >
+                                                <div class="card-body">
+                                                  Text 1 &gt; 1 &gt; 2
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <div
+                                                class="card-header"
+                                                id="heading-1-1-3"
+                                              >
+                                                <h5 class="mb-0">
+                                                  <a
+                                                    class="collapsed"
+                                                    role="button"
+                                                    data-toggle="collapse"
+                                                    href="#collapse-1-1-3"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-1-1-3"
+                                                  >
+                                                    Item 1 &gt; 1 &gt; 3
+                                                  </a>
+                                                </h5>
+                                              </div>
+                                              <div
+                                                id="collapse-1-1-3"
+                                                class="collapse"
+                                                data-parent="#accordion-1-1"
+                                                aria-labelledby="heading-1-1-3"
+                                              >
+                                                <div class="card-body">
+                                                  Text 1 &gt; 1 &gt; 3
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-header" id="heading-1-2">
+                                        <h5 class="mb-0">
+                                          <a
+                                            class="collapsed"
+                                            role="button"
+                                            data-toggle="collapse"
+                                            href="#collapse-1-2"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-1-2"
+                                          >
+                                            Item 1 &gt; 2
+                                          </a>
+                                        </h5>
+                                      </div>
+                                      <div
+                                        id="collapse-1-2"
+                                        class="collapse"
+                                        data-parent="#accordion-1"
+                                        aria-labelledby="heading-1-2"
+                                      >
+                                        <div class="card-body">
+                                          Text 1 &gt; 2
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="heading-2">
+                                <h5 class="mb-0">
+                                  <a
+                                    class="collapsed"
+                                    role="button"
+                                    data-toggle="collapse"
+                                    href="#collapse-2"
+                                    aria-expanded="false"
+                                    aria-controls="collapse-2"
+                                  >
+                                    Item 2
+                                  </a>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse-2"
+                                class="collapse"
+                                data-parent="#accordion"
+                                aria-labelledby="heading-2"
+                              >
+                                <div class="card-body">Text 2</div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="heading-3">
+                                <h5 class="mb-0">
+                                  <a
+                                    class="collapsed"
+                                    role="button"
+                                    data-toggle="collapse"
+                                    href="#collapse-3"
+                                    aria-expanded="false"
+                                    aria-controls="collapse-3"
+                                  >
+                                    Item 3
+                                  </a>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse-3"
+                                class="collapse"
+                                data-parent="#accordion"
+                                aria-labelledby="heading-3"
+                              >
+                                <div class="card-body">Text 3</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--  -->
+                          <div class="slider">
+                            <p>Price Range</p>
+                            <div class="range-slider">
+                              <span class="rangeValues">₹0 – ₹50000</span>
+                              <input
+                                value="0"
+                                min="
+                                1000"
+                                max="50000"
+                                step="
+                                500"
+                                type="range"
+                              />
+                              <input
+                                value="50000"
+                                min="
+                                1000"
+                                max="50000"
+                                step="
+                                500"
+                                type="range"
+                              />
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="other_options">
+                            <label
+                              for=""
+                              class="font-16 lh-22 color-222222 pb-3"
+                              >Duration</label
+                            >
+                            <div class="checkbox_options">
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >Up to 1 hour</span
+                                >
+                              </label>
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >1 to 4 hours</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="other_options">
+                            <label
+                              for=""
+                              class="font-16 lh-22 color-222222 pb-3"
+                              >Time of Day</label
+                            >
+                            <div class="checkbox_options">
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >6am—12pm</span
+                                >
+                              </label>
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >12pm—5pm</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="other_options">
+                            <label
+                              for=""
+                              class="font-16 lh-22 color-222222 pb-3"
+                              >Specials</label
+                            >
+                            <div class="checkbox_options">
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >Deals &amp; Discounts</span
+                                >
+                              </label>
+                              <label class="CheckboxContainer">
+                                <input type="checkbox" name="" class="" />
+                                <span class="font-16 lh-19 color-222222 ml-1"
+                                  >Free Cancellation</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                    </div>
+                    <div class="modal-footer">
+                      <!-- <button
+                        type="button"
+                        class="viewmore bg-transparent"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button> -->
+                      <button type="button" class="viewmore bg-transparent">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="search_results_block">
               <!--  -->
               <a class="row result_card m-0 mb-md-0 mb-3" href="!#">
